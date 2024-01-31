@@ -26,9 +26,12 @@ This portfolio is built with React-Three-Fiber and Tailwind CSS, creating an int
 
 ## Technologies
 
-- React-Three-Fiber: [Link to React-Three-Fiber](https://github.com/pmndrs/react-three-fiber)
-- Tailwind CSS: [Link to Tailwind CSS](https://tailwindcss.com/)
-- Other technologies used in specific projects are detailed within each project's section.
+- [React](https://reactjs.org/): A JavaScript library for building user interfaces.
+- [Three.js](https://threejs.org/): A cross-browser JavaScript library and application programming interface used to create and display animated 3D computer graphics in a web browser.
+- [React-Three-Fiber](https://github.com/pmndrs/react-three-fiber): A React renderer for Three.js, enabling the creation of 3D experiences using React components.
+- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for rapidly building custom user interfaces.
+
+Other technologies used in specific projects are detailed within each project's section.
 
 ## Installation
 
