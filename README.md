@@ -1,4 +1,4 @@
-![Your GIF Header](https://media.giphy.com/media/MlOje3jmFPS12Dy2d3/giphy.gif)
+[![Your Video Header](https://img.youtube.com/vi/LugrFo-gq1M/0.jpg)](https://www.youtube.com/watch?v=LugrFo-gq1M)
 
 # 0xraphael.com | Data Analyst Portfolio
 
