@@ -1,4 +1,5 @@
 import {
+  github,
     mobile,
     backend,
     creator,
@@ -145,6 +146,10 @@ import {
     {
       name: "Git",
       icon: git,
+    },
+    {
+      name: "Github",
+      icon: github,
     },
     {
       name: "Excel",
