@@ -338,9 +338,9 @@ import {
   
   const projects = [
     {
-      name: "Project 3",
+      name: "Data Analyst Portfolio",
       description:
-        "description 3",
+        "Crafted with React-Three-Fiber and Tailwind CSS, presents an immersive display of my SQL, Python, Tableau, and Excel skills. Its interactive 3D elements and responsive design create a visually appealing platform to explore my diverse data analysis projects.",
       tags: [
         {
           name: "react",
@@ -354,9 +354,17 @@ import {
           name: "tailwind",
           color: "pink-text-gradient",
         },
+        {
+          name: "HTML",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "blue-text-gradient",
+        },
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/0xrphl/Data-Analyst-Portfolio",
     },
     {
       name: "Job IT",
