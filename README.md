@@ -4,7 +4,7 @@
 
 # 0xraphael.com | Data Analyst Portfolio
 
-Welcome to my Data Analyst Portfolio, a visually engaging showcase of my skills and projects related to data analysis. This portfolio, deployed at [0xraphael.com](https://0xraphael.com/), features the 20240131AlphaV0.32 version.
+Welcome to my Data Analyst Portfolio, a visually engaging showcase of my skills and projects related to data analysis. This portfolio, deployed in the domain [0xraphael.com](https://0xraphael.com/), features the 20240131AlphaV0.32 version.
 
 ## Purpose
 
