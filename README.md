@@ -1,6 +1,8 @@
+![Your GIF Header](https://media.giphy.com/media/MlOje3jmFPS12Dy2d3/giphy.gif)
+
 # 0xraphael.com | Data Analyst Portfolio
 
-Welcome to my Data Analyst Portfolio, showcasing my skills and projects related to data analysis. This portfolio is deployed at [0xraphael.com](https://0xraphael.com/), featuring the 20240131AlphaV0.3 version.
+Welcome to my Data Analyst Portfolio, showcasing my skills and projects related to data analysis. This portfolio is deployed at [0xraphael.com](https://0xraphael.com/), featuring the 20240131AlphaV0.32 version.
 
 ## Table of Contents
 
