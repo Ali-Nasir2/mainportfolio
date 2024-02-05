@@ -1,4 +1,4 @@
-<img src="https://example.com/path/to/your/gif/image.gif" alt="Your GIF Header" width="100%">
+![Your GIF Header](https://media.giphy.com/media/MlOje3jmFPS12Dy2d3/giphy.gif)
 
 # 0xraphael.com | Data Analyst Portfolio
 
