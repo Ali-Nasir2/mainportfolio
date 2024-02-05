@@ -4,13 +4,18 @@
 
 # 0xraphael.com | Data Analyst Portfolio
 
-Welcome to my Data Analyst Portfolio, showcasing my skills and projects related to data analysis. This portfolio is deployed at [0xraphael.com](https://0xraphael.com/), featuring the 20240131AlphaV0.32 version.
+Welcome to my Data Analyst Portfolio, a visually engaging showcase of my skills and projects related to data analysis. This portfolio, deployed at [0xraphael.com](https://0xraphael.com/), features the 20240131AlphaV0.32 version.
+
+## Purpose
+
+The primary goal of this portfolio is to present my proficiency in data analysis, emphasizing key skills and showcasing a diverse range of projects. As a Data Analyst, I specialize in utilizing various tools and technologies to derive meaningful insights from data.
 
 ## Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
 - [Technologies](#technologies)
+- [Skills and Technologies](#skills-and-technologies)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -19,23 +24,31 @@ Welcome to my Data Analyst Portfolio, showcasing my skills and projects related 
 
 ## Overview
 
-This portfolio is built with React-Three-Fiber and Tailwind CSS, creating an interactive and visually appealing experience for visitors. The primary focus is on presenting my data analysis projects in a clear and organized manner.
+Built with React-Three-Fiber and Tailwind CSS, this portfolio provides an interactive and visually appealing experience. The focus is on presenting data analysis projects in a clear and organized manner, allowing visitors to explore my capabilities seamlessly.
 
 ## Features
 
-- Interactive 3D elements powered by React-Three-Fiber.
-- Responsive design using Tailwind CSS for a seamless experience across devices.
-- Detailed project showcase with descriptions, visualizations, and insights.
-- Easy navigation to explore various sections of the portfolio.
+- **Interactive 3D Elements:** Powered by React-Three-Fiber, creating a unique and engaging user experience.
+- **Responsive Design:** Utilizing Tailwind CSS for a seamless viewing experience across various devices.
+- **Detailed Project Showcase:** Each project is presented with comprehensive descriptions, visualizations, and insights.
+- **Easy Navigation:** Users can effortlessly explore different sections of the portfolio.
+
+## Skills and Technologies
+
+As a Data Analyst, I specialize in:
+
+- **SQL:** Proficient in SQL Server, MySQL, and PostgreSQL.
+- **Python:** Experienced in Pandas, NumPy, SciPy, and Matplotlib.
+- **Data Visualization:** Skilled in Tableau, Excel (VLookup, Conditional Formatting, Pivot Tables), Google Sheets, AppScripts, and Looker Studio.
 
 ## Technologies
 
 - [React](https://reactjs.org/): A JavaScript library for building user interfaces.
-- [Three.js](https://threejs.org/): A cross-browser JavaScript library and application programming interface used to create and display animated 3D computer graphics in a web browser.
-- [React-Three-Fiber](https://github.com/pmndrs/react-three-fiber): A React renderer for Three.js, enabling the creation of 3D experiences using React components.
-- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for rapidly building custom user interfaces.
+- [Three.js](https://threejs.org/): A JavaScript library for creating animated 3D computer graphics.
+- [React-Three-Fiber](https://github.com/pmndrs/react-three-fiber): A React renderer for Three.js, facilitating the creation of 3D experiences.
+- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for building custom user interfaces.
 
-Other technologies used in specific projects are detailed within each project's section.
+Additional technologies used in specific projects are detailed within each project's section.
 
 ## Installation
 
