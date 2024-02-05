@@ -1,4 +1,6 @@
-[![Your Video Header](https://img.youtube.com/vi/LugrFo-gq1M/0.jpg)](https://www.youtube.com/watch?v=LugrFo-gq1M)
+<a href="https://www.youtube.com/watch?v=LugrFo-gq1M">
+  <img src="https://img.youtube.com/vi/LugrFo-gq1M/0.jpg" alt="Watch the Video" width="800">
+</a>
 
 # 0xraphael.com | Data Analyst Portfolio
 
