@@ -64,6 +64,10 @@ To run this portfolio locally, follow these steps:
 
 Explore the portfolio to discover my data analysis projects, view visualizations, and gain insights into my skills and capabilities.
 
+## Issues
+
+Optimizing resource consumption, including render quality, lighting, and mesh quality, is essential to ensure good performance on mobile devices. Optimization is pending for renders in Blender, and techniques such as surfacing a solid with a decal of points could be explored for optimizing particle summoning.
+
 ## Contributing
 
 If you'd like to contribute to this project, feel free to open an issue or submit a pull request. Your feedback and contributions are highly appreciated!
