@@ -1,5 +1,5 @@
 <a href="https://www.youtube.com/watch?v=LugrFo-gq1M">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGhmcHRvNTRwcG1sdWxkaGR1ODM3bDVpcGZuYmdjcWF4d2dubXJrayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/37FzR1rQmKk6KhADHr/giphy.gif" alt="Watch the Video" width="800">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWc1enRsc294dzg5a2FtNmpvbDBhejRwd2VueTY4dW53MDJsMHRicSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Rbvh69Ofg2NdGfMrGM/source.gif">
 </a>
 
 # 0xraphael.com | Data Analyst Portfolio
