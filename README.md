@@ -55,11 +55,31 @@ Additional technologies used in specific projects are detailed within each proje
 
 To run this portfolio locally, follow these steps:
 
-1. Clone this repository: `git clone https://github.com/your-username/your-repo.git`
-2. Navigate to the project directory: `cd your-repo`
-3. Install dependencies: `npm install`
-4. Start the development server: `npm start`
-5. Open your browser and visit `http://localhost:3000` to view the portfolio.
+1. **Clone this repository:**
+    ```bash
+    git clone https://github.com/0xrphl/Data-Analyst-Portfolio.git
+    ```
+
+2. **Navigate to the project directory:**
+    ```bash
+    cd Data-Analyst-Portfolio
+    ```
+
+3. **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+4. **Start the development server:**
+    ```bash
+    npm start
+    ```
+
+5. **Open your browser and visit:**
+    ```
+    http://localhost:3000
+    ```
+   You should now be able to view the portfolio locally.
 
 ## Usage
 
