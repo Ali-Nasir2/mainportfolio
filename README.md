@@ -66,7 +66,7 @@ To run this portfolio locally, follow these steps:
 Explore the portfolio to discover my data analysis projects, view visualizations, and gain insights into my skills and capabilities.
 
 ## Bugs
-**<span style="color:red"> [Bug Fix Pending: Current Resource Consumption Mobile platforms not able to navigate properly] (20240131AlphaV0.54)</span>**
+**<span style="color:red">(20240131AlphaV0.54) [Bug Fix Pending: Current Resource Consumption Mobile platforms not able to navigate properly]</span>**
 Optimizing resource consumption, including render quality, lighting, and mesh quality, is essential to ensure good performance on mobile devices. Optimization is pending for renders in Blender, and techniques such as surfacing a solid with a decal of points could be explored for optimizing particle summoning.
 
 
