@@ -4,7 +4,7 @@
 
 # 0xraphael.com | Data Analyst Portfolio
 
-Welcome to my Data Analyst Portfolio, a visually engaging showcase of my skills and projects related to data analysis. This portfolio, deployed in the domain [0xraphael.com](https://0xraphael.com/), features the 20240131AlphaV0.32 version.
+Welcome to my Data Analyst Portfolio, a visually engaging showcase of my skills and projects related to data analysis. This portfolio, deployed in the domain [0xraphael.com](https://0xraphael.com/), features the 20240131AlphaV0.54 version.
 
 ## Purpose
 
@@ -64,9 +64,10 @@ To run this portfolio locally, follow these steps:
 
 Explore the portfolio to discover my data analysis projects, view visualizations, and gain insights into my skills and capabilities.
 
-## Issues
+## 🛠️ <span style="color:red"> [Bug Fix Pending: Current Resource Consumption Mobile platforms not able to navigate properly] (20240131AlphaV0.54)</span>
 
 Optimizing resource consumption, including render quality, lighting, and mesh quality, is essential to ensure good performance on mobile devices. Optimization is pending for renders in Blender, and techniques such as surfacing a solid with a decal of points could be explored for optimizing particle summoning.
+
 
 ## Contributing
 
