@@ -40,7 +40,7 @@ As a Data Analyst, I specialize in:
 
 - **SQL:** Proficient in SQL Server, MySQL, and PostgreSQL.
 - **Python:** Experienced in Pandas, NumPy, SciPy, and Matplotlib.
-- **Data Visualization:** Skilled in Tableau, Excel (VLookup, Conditional Formatting, Pivot Tables), Google Sheets, AppScripts, and Looker Studio.
+- **Data Visualization:** Skilled in Tableau, PowerBI, Excel (VLookup, Conditional Formatting, Pivot Tables), Google Sheets, AppScripts, and Looker Studio.
 
 ## Technologies
 
