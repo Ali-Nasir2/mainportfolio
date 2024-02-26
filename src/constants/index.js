@@ -16,10 +16,10 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
+    quiroga,
+    att,
+    TCLO,
+    UTP,
     carrent,
     jobit,
     tripguide,
@@ -70,19 +70,19 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Data Analyst",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "React web Developer",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Future Data Scientist",
       icon: backend,
     },
     {
-      title: "Data Analyst",
+      title: "Prospective Mechanical Engineer",
       icon: creator,
     },
   ];
@@ -261,55 +261,219 @@ import {
   
   const experiences = [
     {
-      title: "Mechanical Engineer",
+      title: "Data Analyst",
+      company_name: "Quiroga Law Office, PLLC",
+      icon: quiroga,
+      iconBg: "#fff",
+      date: "August 2023 - Present",
+      points: [
+        "Developed a Python Selenium script to automate the extraction of real-time data from a law firm's Laravel PHP website, focusing on case management metrics. CSV files containing detailed case information, including creation timestamps, status updates, and completion timestamps, were downloaded.",
+        "Processed and cleaned the extracted data using Microsoft Excel, leveraging Power Query for transformation and structuring. Implemented a query function to import data from the downloaded CSV files and utilized Excel's Power Query feature to clean and transform the raw data into a structured format suitable for analysis.",
+        "Designed and implemented an interactive dashboard within Excel to visualize key performance metrics, including case drafting time, status distribution, and case progression dynamics. Excel's pivot tables, charts, and conditional formatting rules were employed for data visualization and analysis.",
+        "The dashboard was utilized by higher hierarchy management, including attorneys, for real-time reporting in management meetings, providing insights into operational efficiency and performance. Engaged in an iterative feedback loop with the immigration paralegal and management to identify and prioritize specific metrics for measuring legal assistant performance and case status accurately. Continued refinement of the dashboard based on evolving data requirements and feedback from stakeholders.",
+      ],
+      tags: [
+        {
+          name: "#Microsoft Excel",
+          color: "green-text-gradient",
+        },
+        {
+          name: "#Python Selenium Scripting Automatization",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "#Data Processing and Cleaning",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "#Pivot Tables",
+          color: "red-text-gradient",
+        },
+        {
+          name: "#Conditional Formatting",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "#Excel Dashboard Design",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "#Report Storytelling",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "#Performance Metrics",
+          color: "gray-text-gradient",
+        },
+      ],
+    },
+    {
+      title: "Data Analyst and Intake Specialist",
+      company_name: "The Cruz Law Office APC",
+      icon: TCLO,
+      iconBg: "#fff",
+      date: "July 2022 - Present",
+      points: [
+        "Utilizing Google Apps Script, Google Calendar API, and Python Selenium automation, I developed a CRM call log tool in Google Sheets, boosting data capture by 4 times compared to previous methods. This tool expanded data variables to over 16 points, including client details and interaction types like location, potential service, personal data and information regarding his legal needs and current situation.",
+        "Effective communication skills were crucial in translating this data into actionable insights for management meetings, aiding informed decision-making and deeper client understanding among team members and stakeholders.",
+        "A robust database was created to capture all interactions for detailed analysis and marketing insights. Integration with Looker Studio dashboard enabled seamless analysis and client segmentation. Automated report generation streamlined client acquisition processes.",
+        "Integration with case management systems and Google Calendar facilitated direct creation of profiles and events from the call log. Google Apps Script automation enhanced workflow efficiency, while our unwavering focus on accountability ensured full oversight over each task assigned to virtual assistants. Transparent processes and integrated systems further reinforced our commitment to accurate reporting and efficient task management.",
+      ],
+      tags: [
+        {
+          name: "#Google Sheets",
+          color: "green-text-gradient",
+        },
+        {
+          name: "#Google Calendar API",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "#Python ",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "#Google Apps Script",
+          color: "red-text-gradient",
+        },
+        {
+          name: "#Actionable Insights",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "#Looker Studio",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "#Report Generation",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "#Accountability",
+          color: "gray-text-gradient",
+        },
+        {
+          name: "#Automatization",
+          color: "green-text-gradient",
+        },
+      ],
+    }, 
+    {
+      title: "Blockchain Engineer Trainee",
+      company_name: "Independent",
+      icon: Solidity,
+      iconBg: "#fff",
+      date: "March 2020 - Present",
+      points: [
+        "Deep comprehension of cryptographic principles fundamental to blockchain, including hash functions, digital signatures, and cryptographic hashing algorithms. Proficiency in cryptographic protocols such as secure multi-party computation (MPC), zero-knowledge proofs (ZKPs), and homomorphic encryption, and their application in blockchain systems. Expertise in blockchain consensus mechanisms like Proof of Work (PoW) and Proof of Stake (PoS), understanding their implications for network security and scalability.",
+        "Advanced understanding and proficiency in Solidity programming language, encompassing syntax, data structures, and features. Extensive experience in crafting smart contracts for various DeFi applications like decentralized exchanges (DEXs), lending platforms, and yield farming protocols. In-depth knowledge of Solidity security vulnerabilities and best practices, ensuring the development of secure and efficient smart contracts.",
+        "Garnered extensive experience in managing ASIC ownership, network validation, and the setup process within mining pools and worldwide hosting services. This involves procuring ASIC hardware, configuring and maintaining its operational integrity for network validation through PoW mechanisms, and efficiently setting up ASIC miners within mining pools to enhance block mining probabilities and reward acquisition.",
+        "Experienced cryptocurrency trader skilled in technical analysis, fundamental evaluation, and advanced trading strategies. Proficient in utilizing Rust for executing DEFI arbitrage and conducting deep trade analysis employing Elliott Wave techniques, liquidity analysis, and order block assessment. Expertise includes implementing algorithmic trading strategies, managing risk, and optimizing profitability through informed investment decisions."
+        ,
+      ],
+      tags: [
+        {
+          name: "#Crypto Hashing Algorithms",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "#PoW",
+          color: "green-text-gradient",
+        },
+        {
+          name: "#Solidity",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "#DeFi/DEXs",
+          color: "purple-text-gradient",
+        },
+        {
+          name: "#Risk Management",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "#Rust",
+          color: "gray-text-gradient",
+        },
+        {
+          name: "#ASIC",
+          color: "red-text-gradient",
+        },
+      ],
+    },
+    {
+      title: "Billing and Sales Customer service specialist",
+      company_name: "AT&T | Accedo Technologies",
+      icon: att,
+      iconBg: "#fff",
+      date: "January 2017 - February 2019",
+      points: [
+        "Proficient in Customer Relationship Management (CRM): Effectively managed billing and sales inquiries from AT&T customers, utilizing advanced CRM systems to navigate accounts, address concerns, and process transactions swiftly and accurately.",
+        "Exceptional Communication Skills: Demonstrated strong verbal and written communication abilities in providing clear and concise explanations of billing details, sales offers, and service options to customers, fostering positive interactions and resolving issues promptly.",
+        "Problem Resolution Expertise: Developed a keen aptitude for troubleshooting and resolving complex billing discrepancies, sales inquiries, and service-related issues, employing analytical thinking and resourcefulness to ensure customer satisfaction and retention.",
+        "Sales and Revenue Optimization: Leveraged product knowledge and persuasive communication techniques to identify upselling and cross-selling opportunities, contributing to increased revenue generation and the achievement of sales targets within the AT&T customer service environment.",
+      ],
+      tags: [
+        {
+          name: "#Customer Service",
+          color: "purple-text-gradient",
+        },
+        {
+          name: "#Sales Support",
+          color: "green-text-gradient",
+        },
+        {
+          name: "#Communication Skills",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "#Conflict Resolution",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "#Data Entry",
+          color: "red-text-gradient",
+        },
+        {
+          name: "#Multitasking",
+          color: "yellow-text-gradient",
+        },
+      ],
+    },
+    {
+      title: "Mechanical Engineering",
       company_name: "Technological University of Pereira",
-      icon: starbucks,
+      icon: UTP,
       iconBg: "#000000",
       date: "January 2015 - December 2021",
       points: [
-        "xxxyy",
-        "xxxyy",
-        "xxxyy",
-        "xxxyy",
+        "Focus on specializing in mathematics, I serve as a teaching designated tutor for the faculty of basic sciences (2015-2018), where I provide instructional support to students ranging from basic multivariable calculus, linear algebra to advanced topics such as complex systems analysis and differential equations.",
+        "In 2017, I participated in a project with the technology and innovation branch of the National Education Service (Tecnoparque SENA), Our task was to design an irrigation system for a greenhouse, financed by the city, aimed at automating the irrigation process for seeds and crops before transplantation to the farmland. Managing timelines, resources, and stakeholder expectations during this project sharpened my project management skills, preparing me for future leadership roles in engineering endeavors and problem solving.",
+        "Developed a comprehensive understanding of systems design failure and fatigue theory, gaining valuable insights into the complexities of mechanical systems and their performance under varying conditions. Proficient in applying linear algebra techniques, particularly in determining eigenvalues and eigenvectors of stress tensor systems, essential for both theoretical analysis and practical applications such as finite element analysis (FEA). Hands-on experience in implementing and interpreting analysis results using industry-standard software tools such as SolidWorks Simulation and ANSYS, enabling the validation and optimization of mechanical designs for robustness and performance.",
+        "Certified SolidWorks Mechanical Design Associate, demonstrating proficiency in utilizing SolidWorks software for mechanical design tasks and enhancing engineering workflows."
       ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "The Cruz Law Office APC.",
-      icon: tesla,
-      iconBg: "#000000",
-      date: "July 2022 - December 2023",
-      points: [
-        "xxxyy",
-        "xxxyy",
-        "xxxyy",
-        "xxxyy",
-      ],
-    },
-    {
-      title: "Customer services specialist and Sales",
-      company_name: "Accedo Technologies",
-      icon: shopify,
-      iconBg: "#000000",
-      date: "January 2017 - August 2019",
-      points: [
-        "xxxyy",
-        "xxxyy",
-        "xxxyy",
-        "xxxyy",
-      ],
-    },
-    {
-      title: "Data Analist",
-      company_name: "Quiroga Law Office",
-      icon: meta,
-      iconBg: "#000000",
-      date: "Jan 2023 - Present",
-      points: [
-        "xxxyy",
-        "xxxyy",
-        "xxxyy",
-        "xxxyy",
+      tags: [
+        {
+          name: "#Thermodynamics",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "#CAD/CAM/CAE/CSWA",
+          color: "green-text-gradient",
+        },
+        {
+          name: "#FEA",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "#Fourier Transform",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "#Time Series Analysis",
+          color: "gray-text-gradient",
+        },
       ],
     },
   ];
@@ -385,7 +549,7 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "css",
           color: "pink-text-gradient",
         },
       ],

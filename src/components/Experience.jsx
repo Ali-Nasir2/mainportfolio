@@ -27,7 +27,7 @@ const ExperienceCard = ({ experience }) => {
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className='w-[90%] h-[90%] object-contain'
+            className='w-[100%] h-[100%] object-contain'
           />
         </div>
       }
@@ -52,6 +52,18 @@ const ExperienceCard = ({ experience }) => {
           </li>
         ))}
       </ul>
+
+      {/* Render tags */}
+      <div className="flex flex-wrap mt-4">
+        {experience.tags.map((tag, index) => (
+          <span
+            key={`tag-${index}`}
+            className={`px-0 py-0 mr-2 mb-2 rounded ${tag.color}`}
+          >
+            {tag.name}
+          </span>
+        ))}
+      </div>
     </VerticalTimelineElement>
   );
 };

@@ -45,15 +45,16 @@ import Wordpress from "./tech/Wordpress.png";
 import GoogleAnalytics from "./tech/GoogleAnalytics.png";
 import Litmus from "./tech/Litmus.png";
 import MJML from "./tech/MJML.png";
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-import carrent from "./carrent.png";
+import quiroga from "./company/quiroga.png";
+import att from "./company/att.png";
+import UTP from "./company/UTP.png";
+import TCLO from "./company/TCLO.png";
+import carrent from "./carrent.gif";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import Linkedinlogo from "./Linkedinlogo.png";
 import X from "./X.png";
+
 
 export {
   logo,
@@ -78,10 +79,10 @@ export {
   typescript,
   threejs,
   python,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  quiroga,
+  att,
+  UTP,
+  TCLO,
   carrent,
   jobit,
   tripguide,
