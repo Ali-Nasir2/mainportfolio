@@ -42,26 +42,12 @@ const About = () => {
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
-
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a highly skilled software developer with a focus on mathematics and data analytics. Proficient in TypeScript and JavaScript, I specialize in frameworks like React, Node.js, and Three.js. My primary strengths, however, lie in data science, where I leverage tools such as Excel, Google Sheets, Looker Studio, Power BI, and Tableau for data management and visualization.
+Experienced software developer specializing in mathematics and data analytics. Proficient in TypeScript, JavaScript, React, Node.js, Three.js. Skilled in Excel, Google Sheets, Looker Studio, Power BI, Tableau, Google AppScript for data management and visualization. Solid SQL and Python data analysis skills using Pandas, NumPy, Matplotlib, and Django. Collaborative and adaptable, focused on creating efficient, scalable solutions. Ready to bring your ideas to life.
      </motion.p>
-     <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-      >
-     In addition, I bring solid data science skills with Python, utilizing libraries like Pandas, NumPy, and Matplotlib. This combination allows me to construct sophisticated data collection systems, analyze data comprehensively, and create insightful visualizations.
-</motion.p>
-<motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-      >
-As a quick learner, I collaborate closely with clients to develop efficient, scalable, and user-friendly solutions. Let's collaborate to transform your ideas into reality, combining my expertise in data analytics, and software development.
-</motion.p>
-
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />

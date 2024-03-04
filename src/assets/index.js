@@ -45,7 +45,7 @@ import Wordpress from "./tech/Wordpress.png";
 import GoogleAnalytics from "./tech/GoogleAnalytics.png";
 import Litmus from "./tech/Litmus.png";
 import MJML from "./tech/MJML.png";
-import quiroga from "./company/quiroga.png";
+import RR from "./company/RR.png";
 import att from "./company/att.png";
 import UTP from "./company/UTP.png";
 import TCLO from "./company/TCLO.png";
@@ -79,7 +79,7 @@ export {
   typescript,
   threejs,
   python,
-  quiroga,
+  RR,
   att,
   UTP,
   TCLO,

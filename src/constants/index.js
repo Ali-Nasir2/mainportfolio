@@ -16,7 +16,7 @@ import {
     git,
     figma,
     docker,
-    quiroga,
+    RR,
     att,
     TCLO,
     UTP,
@@ -195,12 +195,10 @@ import {
       name: "Python",
       icon: python,
     },
-
     {
       name: "MATLAB",
       icon: MATLAB,
     },
-
     {
       name: "Pandas",
       icon: Pandas,
@@ -262,8 +260,8 @@ import {
   const experiences = [
     {
       title: "Data Analyst",
-      company_name: "Quiroga Law Office, PLLC",
-      icon: quiroga,
+      company_name: "Independent - Freelance service for Immigration Law Firm",
+      icon: RR,
       iconBg: "#fff",
       date: "August 2023 - Present",
       points: [
@@ -314,7 +312,7 @@ import {
       iconBg: "#fff",
       date: "July 2022 - Present",
       points: [
-        "Utilizing Google Apps Script, Google Calendar API, and Python Selenium automation, I developed a CRM call log tool in Google Sheets, boosting data capture by 4 times compared to previous methods. This tool expanded data variables to over 16 points, including client details and interaction types like location, potential service, personal data and information regarding his legal needs and current situation.",
+        "Utilizing Google Apps Script, Google Calendar API, and Python Selenium automation, I developed a CRM call log tool in Google Sheets, boosting data capture by 4 times compared to previous methods. This tool expanded data variables to over 16 dimesions in the database structure for potential client metadata, including client details and interaction types like location, potential service, personal data and information regarding his legal needs and current situation.",
         "Effective communication skills were crucial in translating this data into actionable insights for management meetings, aiding informed decision-making and deeper client understanding among team members and stakeholders.",
         "A robust database was created to capture all interactions for detailed analysis and marketing insights. Integration with Looker Studio dashboard enabled seamless analysis and client segmentation. Automated report generation streamlined client acquisition processes.",
         "Integration with case management systems and Google Calendar facilitated direct creation of profiles and events from the call log. Google Apps Script automation enhanced workflow efficiency, while our unwavering focus on accountability ensured full oversight over each task assigned to virtual assistants. Transparent processes and integrated systems further reinforced our commitment to accurate reporting and efficient task management.",
@@ -361,7 +359,7 @@ import {
     {
       title: "Blockchain Engineer Trainee",
       company_name: "Independent",
-      icon: Solidity,
+      icon: RR,
       iconBg: "#fff",
       date: "March 2020 - Present",
       points: [
@@ -406,7 +404,7 @@ import {
       title: "Billing and Sales Customer service specialist",
       company_name: "AT&T | Accedo Technologies",
       icon: att,
-      iconBg: "#fff",
+      iconBg: "#FFF",
       date: "January 2017 - February 2019",
       points: [
         "Proficient in Customer Relationship Management (CRM): Effectively managed billing and sales inquiries from AT&T customers, utilizing advanced CRM systems to navigate accounts, address concerns, and process transactions swiftly and accurately.",
@@ -438,6 +436,44 @@ import {
         {
           name: "#Multitasking",
           color: "yellow-text-gradient",
+        },
+      ],
+    },
+    {
+      title: "Math, Physics, and Engineering Sciences Teacher",
+      company_name: "Independent",
+      icon: RR,
+      iconBg: "#FFF",
+      date: "January 2016 - December 2020",
+      points: [
+        "Offered private tutoring sessions in thermodynamics, fluid mechanics, and materials science to university engineering students, catering to diverse college students from various colleges and faculties across the city.",
+        "Provided independent, personalized math and physics instruction to high school students requiring additional one-on-one tutoring.",
+        "Designed customized lessons in math, physics, and engineering subjects like statics, dynamics, and strength of materials to civil, electrical, and mechanical engineering undergraduates, preparing students for projects, proofs, and tests through personalized instruction and tutoring.",
+      ],
+      tags: [
+        {
+          name: "#Multivariable Calculus",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "#Statics, Dynamics, and Strength of Materials",
+          color: "green-text-gradient",
+        },
+        {
+          name: "#Physics",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "#Thermodynamics",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "#Statistics",
+          color: "gray-text-gradient",
+        },
+        {
+          name: "#Teaching",
+          color: "red-text-gradient",
         },
       ],
     },
