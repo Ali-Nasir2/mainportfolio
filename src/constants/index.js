@@ -545,8 +545,8 @@ import {
     {
       name: "SOLIDWORKS project",
       description:
-        "I meticulously designed a breathtaking three-stone diamond ring using SolidWorks, featuring stunning lab-grown diamonds certified by IGI. Crafted with precision, the diamonds are set in a radiant 24-karat gold band, embodying both elegance and eco-conscious luxury.",
-      tags: [
+      "I meticulously designed a breathtaking three-stone diamond ring using SolidWorks, featuring stunning lab-grown diamonds certified by IGI. Crafted with precision, the diamonds are set in a radiant 24-karat gold band, embodying both elegance and eco-conscious luxury. [Download GrabCAD model (URL available on Github repository)]",
+    tags: [
         {
           name: "SOLIDWORKS",
           color: "red-text-gradient",
