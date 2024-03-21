@@ -50,7 +50,7 @@ import att from "./company/att.png";
 import UTP from "./company/UTP.png";
 import TCLO from "./company/TCLO.png";
 import carrent from "./carrent.gif";
-import jobit from "./jobit.png";
+import ring from "./ring.gif";
 import tripguide from "./tripguide.png";
 import Linkedinlogo from "./Linkedinlogo.png";
 import X from "./X.png";
@@ -84,7 +84,6 @@ export {
   UTP,
   TCLO,
   carrent,
-  jobit,
   tripguide,
   PowerBI,
   Tableau,
@@ -113,4 +112,5 @@ export {
   MJML,
   SQLserver,
   X,
+  ring,
 };

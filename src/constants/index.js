@@ -21,7 +21,7 @@ import {
     TCLO,
     UTP,
     carrent,
-    jobit,
+    ring,
     tripguide,
     threejs,
     python,
@@ -543,6 +543,31 @@ import {
   
   const projects = [
     {
+      name: "SOLIDWORKS project",
+      description:
+        "I meticulously designed a breathtaking three-stone diamond ring using SolidWorks, featuring stunning lab-grown diamonds certified by IGI. Crafted with precision, the diamonds are set in a radiant 24-karat gold band, embodying both elegance and eco-conscious luxury.",
+      tags: [
+        {
+          name: "SOLIDWORKS",
+          color: "red-text-gradient",
+        },
+        {
+          name: "IGI certified diamonds",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "Jewelry Design",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "SOLIDWORKS Visualize",
+          color: "gray-text-gradient",
+        },
+      ],
+      image: ring,
+      source_code_link: "https://github.com/0xrphl/Three-stone-radiant-cut-diamond-ring-SOLIDWORKS-project",
+    },
+    {
       name: "Data Analyst Portfolio",
       description:
         "Crafted with React-Three-Fiber and Tailwind CSS, presents an immersive display of my SQL, Python, Tableau, and Excel skills. Its interactive 3D elements and responsive design create a visually appealing platform to explore my diverse data analysis projects.",
@@ -570,27 +595,6 @@ import {
       ],
       image: carrent,
       source_code_link: "https://github.com/0xrphl/Data-Analyst-Portfolio",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Description2",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
     },
     {
       name: "project1",
