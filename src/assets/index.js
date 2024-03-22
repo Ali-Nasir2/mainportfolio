@@ -18,7 +18,7 @@ import reactjs from "./tech/reactjs.png";
 import MySQL from "./tech/MySQL.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import threejs from "./tech/threejs.png";
 import python from "./tech/python.png";
 import PowerBI from "./tech/PowerBI.png";
 import Tableau from "./tech/Tableau.png";
