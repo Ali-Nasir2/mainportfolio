@@ -312,7 +312,7 @@ import {
       iconBg: "#fff",
       date: "July 2022 - Present",
       points: [
-        "Utilizing Google Apps Script, Google Calendar API, and Python Selenium automation, I developed a CRM call log tool in Google Sheets, boosting data capture by 4 times compared to previous methods. This tool expanded data variables to over 16 dimesions in the database structure for potential client metadata, including client details and interaction types like location, potential service, personal data and information regarding his legal needs and current situation.",
+        "Served as an intake and sales specialist, assessing immigration cases eligibility, retaining clients, and handling payments. Utilizing Google Apps Script, Google Calendar API, and Python Selenium automation, I developed a CRM call log tool in Google Sheets, boosting data capture by 4 times compared to previous methods. This tool expanded data variables to over 16 dimesions in the database structure for potential client metadata, including client details and interaction types like location, potential service, personal data and information regarding his legal needs and current situation.",
         "Effective communication skills were crucial in translating this data into actionable insights for management meetings, aiding informed decision-making and deeper client understanding among team members and stakeholders.",
         "A robust database was created to capture all interactions for detailed analysis and marketing insights. Integration with Looker Studio dashboard enabled seamless analysis and client segmentation. Automated report generation streamlined client acquisition processes.",
         "Integration with case management systems and Google Calendar facilitated direct creation of profiles and events from the call log. Google Apps Script automation enhanced workflow efficiency, while our unwavering focus on accountability ensured full oversight over each task assigned to virtual assistants. Transparent processes and integrated systems further reinforced our commitment to accurate reporting and efficient task management.",
@@ -545,7 +545,7 @@ import {
     {
       name: "SOLIDWORKS project",
       description:
-      "I meticulously designed a breathtaking three-stone diamond ring using SolidWorks, featuring stunning lab-grown diamonds certified by IGI. Crafted with precision, the diamonds are set in a radiant 24-karat gold band, embodying both elegance and eco-conscious luxury. [Download GrabCAD model (URL available on Github repository)]",
+      "I meticulously designed a breathtaking three-stone diamond ring using SolidWorks, featuring stunning lab-grown diamonds certified by IGI. Crafted with precision, the diamonds are set in a radiant 24-karat gold band, embodying both elegance and eco-conscious luxury, SOLIDWORKS Visualize used for renders. [Download GrabCAD model (URL available on Github repository)]",
     tags: [
         {
           name: "SOLIDWORKS",
