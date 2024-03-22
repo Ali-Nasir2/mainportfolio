@@ -1,5 +1,5 @@
 import {
-  github,
+    github,
     mobile,
     backend,
     creator,
@@ -543,7 +543,7 @@ import {
   
   const projects = [
     {
-      name: "SOLIDWORKS project",
+      name: "Three stone gold diamond ring SOLIDWORKS project",
       description:
       "I meticulously designed a breathtaking three-stone diamond ring using SolidWorks, featuring stunning lab-grown diamonds certified by IGI. Crafted with precision, the diamonds are set in a radiant 24-karat gold band, embodying both elegance and eco-conscious luxury, SOLIDWORKS Visualize used for renders. [Download GrabCAD model (URL available on Github repository)]",
     tags: [

@@ -54,9 +54,11 @@ import ring from "./ring.gif";
 import tripguide from "./tripguide.png";
 import Linkedinlogo from "./Linkedinlogo.png";
 import X from "./X.png";
+import RLOG from "./RLOG.png";
 
 
 export {
+  RLOG,
   logo,
   backend,
   creator,
