@@ -1,4 +1,5 @@
-import logo from "./Rlogow.svg";
+import logo from "./Rlogow.png";
+import Rlogo from "./Rlogo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -58,6 +59,7 @@ import RLOG from "./RLOG.png";
 
 
 export {
+  Rlogo,
   RLOG,
   logo,
   backend,
