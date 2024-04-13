@@ -22,6 +22,7 @@ import {
     UTP,
     carrent,
     ring,
+    budget,
     tripguide,
     threejs,
     python,
@@ -51,6 +52,9 @@ import {
     Litmus,
     MJML,
     SQLserver,
+    Cryptotracker,
+    CRM,
+    Calendar,
   } from "../assets";
   
   export const navLinks = [
@@ -543,9 +547,93 @@ import {
   
   const projects = [
     {
+      name: "Google calendar events analysis",
+      description:
+      "This project uses Google Apps Script to extract event data from Google Calendar and store it in Google Sheets. Data includes Event Title, Dates, Creator, and more for accountability. It's also used in Looker Studio for insights on office consultations.",
+    tags: [
+        {
+          name: "Google Sheets",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Looker Studio",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Google Apps Script",
+          color: "red-text-gradient",
+        },
+        {
+          name: "Google API",
+          color: "gray-text-gradient",
+        },
+      ],
+      image: Calendar,
+      source_code_link: "https://github.com/0xrphl/Google-calendar-events-analysis-Google-sheets-Google-App-Scripts-Looker-Studio-",
+    },
+   {
+      name: "Crypto Portfolio Tracker",
+      description:
+      "This Google Sheets project allows you to track your cryptocurrency portfolio using real-time data fetched from CoinMarketCap. It utilizes Google Apps Script to request data from the CoinMarketCap API and update your spreadsheet with the latest prices.",
+    tags: [
+        {
+          name: "Google Sheets",
+          color: "green-text-gradient",
+        },
+        {
+          name: "CoinMarketCap API",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: Cryptotracker,
+      source_code_link: "https://github.com/0xrphl/Crypto-portfolio-tracker-Google-Sheets-Coinmarketcap-API-",
+    },
+    {
+      name: "Budget and Expenses dashboard",
+      description:
+      "Track finances easily on Google Sheets. Input income, savings, and expenses, categorized by date and type. Integration with Looker Studio for visualizing data. Simplify your finances effortlessly.",
+    tags: [
+        {
+          name: "Google Sheets",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Looker Studio",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: budget,
+      source_code_link: "https://github.com/0xrphl/Budget-and-Expenses-dashboard-Google-Sheets-Looker-Studio-",
+    },
+    {
+      name: "Intake and CRM System",
+      description:
+      "This project streamlines CRM intake using Google Sheets, Apps Script, and Looker Studio. Features include legal office intake system, Sheets integration, Apps Script automation, Google Calendar integration, SMS API for reminders, and Looker Studio for real-time KPI insights.",
+    tags: [
+        {
+          name: "Google Sheets",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Looker Studio",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Google Apps Script",
+          color: "red-text-gradient",
+        },
+        {
+          name: "Google API",
+          color: "gray-text-gradient",
+        },
+      ],
+      image: CRM,
+      source_code_link: "https://github.com/0xrphl/Intake-and-CRM-Google-Sheets-Google-App-Script-Looker-Studio-",
+    },
+    {
       name: "Three stone gold diamond ring SOLIDWORKS project",
       description:
-      "I meticulously designed a breathtaking three-stone diamond ring using SolidWorks, featuring stunning lab-grown diamonds certified by IGI. Crafted with precision, the diamonds are set in a radiant 24-karat gold band, embodying both elegance and eco-conscious luxury, SOLIDWORKS Visualize used for renders. [Download GrabCAD model (URL available on Github repository)]",
+      "I designed a stunning three-stone diamond ring in SolidWorks with lab-grown diamonds certified by IGI. Crafted in radiant 24-karat gold for elegance and eco-conscious luxury, SOLIDWORKS Visualize was used for renders. [GrabCAD model available on Github.]",
     tags: [
         {
           name: "SOLIDWORKS",
@@ -596,27 +684,7 @@ import {
       image: carrent,
       source_code_link: "https://github.com/0xrphl/Data-Analyst-Portfolio",
     },
-    {
-      name: "project1",
-      description:
-        "Description 1",
-      tags: [
-        {
-          name: "LookerStudio",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Google Sheets",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Google Apps Script",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
-    },
+
   ];
   
   export { services, technologies, experiences, testimonials, projects, Linkedinlog };

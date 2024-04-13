@@ -52,13 +52,22 @@ import UTP from "./company/UTP.png";
 import TCLO from "./company/TCLO.png";
 import carrent from "./carrent.gif";
 import ring from "./ring.gif";
+import budget from "./budget.png";
 import tripguide from "./tripguide.png";
 import Linkedinlogo from "./Linkedinlogo.png";
 import X from "./X.png";
 import RLOG from "./RLOG.png";
+import Cryptotracker from "./Cryptotracker.png";
+import CRM from "./CRM.gif";
+import Calendar from "./Calendar.gif";
+
 
 
 export {
+  Calendar,
+  CRM,
+  Cryptotracker,
+  budget,
   Rlogo,
   RLOG,
   logo,
