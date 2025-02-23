@@ -4,10 +4,12 @@ import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { logo, menu, close} from '../assets';
+import { useLanguage } from '../context/LanguageContext';
 
 const Navbar = () => {
 const [active, setActive] = useState("");
 const [toggle, setToggle] = useState(false);
+const { currentLanguage, toggleLanguage, t } = useLanguage();
 
   return (
     
@@ -20,22 +22,34 @@ const [toggle, setToggle] = useState(false);
       window.scrollTo(0,0);}}>
         <img src={logo} alt="logo" className="w-12 h-12 object-contain"/>
         <p className="text-white text-[18px] font-bold cursor-pointer flex">
-          Raphael &nbsp;<span>| Data Analyst
-          </span>
-          </p>
+          Raphael &nbsp;
+          <span className="hidden md:block">|| {t('role')}</span>
+          <span className="md:hidden">|| {t('roleShort')}</span>
+        </p>
       </Link>
+
+      {/* Show language toggle only on desktop */}
+      <div className="hidden sm:block">
+        <button
+          onClick={toggleLanguage}
+          className="px-4 py-2 text-white bg-tertiary rounded-xl mx-4"
+        >
+          {currentLanguage === 'en' ? 'ES | Español' : 'EN | English'}
+        </button>
+      </div>
+
       <ul className="list-none hidden sm:flex flex-row gap-10">
-        {navLinks.map((Link) => (
+        {navLinks[currentLanguage].map((link) => (
           <li
-          key={Link.id}
+          key={link.id}
           className={`${
-            active === Link.title 
+            active === link.title 
             ? "text-white" 
             : "text-secondary"
           } hover:text-white text-[18px] font-medium cursor-pointer`}
-          onClick={() => setActive(Link.title)}
+          onClick={() => setActive(link.title)}
           >
-            <a href={`#${Link.id}`}>{Link.title}</a>
+            <a href={`#${link.id}`}>{link.title}</a>
           </li>
         ))}
       </ul>
@@ -48,24 +62,37 @@ const [toggle, setToggle] = useState(false);
           />
           <div className={`${!toggle ? 'hidden' 
           : 'flex' } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
-              <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
-        {navLinks.map((Link) => (
-          <li
-          key={Link.id}
-          className={`${
-            active === Link.title 
-            ? "text-white" 
-            : "text-secondary"
-          } font-poppins font-medium cursor-pointer text-[16px]`}
-          onClick={() =>{
-            setToggle(!toggle);
-             setActive(Link.title);
-            }}
-          >
-            <a href={`#${Link.id}`}>{Link.title}</a>
-          </li>
-        ))}
-        </ul>
+              <div className="flex flex-col gap-4">
+                {/* Language toggle button in mobile menu */}
+                <button
+                  onClick={() => {
+                    toggleLanguage();
+                    setToggle(false);
+                  }}
+                  className="px-4 py-2 text-white bg-tertiary rounded-xl text-[16px] font-medium"
+                >
+                  {currentLanguage === 'en' ? 'ES | Español' : 'EN | English'}
+                </button>
+
+                <ul className="list-none flex justify-end items-start flex-col gap-4">
+                  {navLinks[currentLanguage].map((link) => (
+                    <li
+                    key={link.id}
+                    className={`${
+                      active === link.title 
+                      ? "text-white" 
+                      : "text-secondary"
+                    } font-poppins font-medium cursor-pointer text-[16px]`}
+                    onClick={() =>{
+                      setToggle(!toggle);
+                       setActive(link.title);
+                      }}
+                    >
+                      <a href={`#${link.id}`}>{link.title}</a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
           </div>
       </div>
     </div>

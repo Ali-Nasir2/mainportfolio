@@ -1,10 +1,19 @@
 import React, { useEffect, useState, useRef, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
+import { Html } from "@react-three/drei";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 import BallCanvas from "./canvas/Ball";
 import Tooltip from "./common/Tooltip";
 import { styles } from "../styles";
+
+const LoadingFallback = () => (
+  <Html center>
+    <div className="flex items-center justify-center">
+      <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-purple-500"></div>
+    </div>
+  </Html>
+);
 
 const Tech = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -63,7 +72,7 @@ const Tech = () => {
     };
   }, [isMobile, isMobile1, isMobile2]);
 
-  const cols = isMobile ? 3 : isMobile1 ? 4 : isMobile2 ? 5 : 8;
+  const cols = isMobile ? 4 : isMobile1 ? 4 : isMobile2 ? 5 : 8;
   const rows = 6;
   const fox = isMobile ? 25 : 30;
 
@@ -102,44 +111,51 @@ const Tech = () => {
 
   const canvasStyle = {
     position: 'relative',
-    width: isMobile ? '100%' : isMobile1 ? '110%' : isMobile2 ? '100%' : '110%' ,
-    height: isMobile ? '1500px' : isMobile1 ?  '1600px' : isMobile2 ?  '1200px' : '900px',
+    width: isMobile ? '100%' : isMobile1 ? '110%' : isMobile2 ? '100%' : '110%',
+    height: '130vh',
   };
 
   return (
     <div ref={techRef} className="flex flex-col items-center" onMouseMove={handleMouseMove}>
-      <p className={`${styles.sectionHeadText}  marginLeft: '50px' text-center`}>
+      <p className={`${styles.sectionHeadText} text-center`}>
         Technologies I've worked with
       </p>
-      <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
-        {/* Add your heading text here */}
-      </h2>
-
-      <div style={{ ...canvasStyle, marginLeft: '0px' }} className="flex flex-row flex-wrap justify-center gap-0 items-center">
-  <Canvas
-    frameloop="always"
-    dpr={window.devicePixelRatio}
-    gl={{ preserveDrawingBuffer: true, antialias: false,  powerPreference: "high-performance" }}
-    camera={isMobile ? { position: [5.3, -7, 50], fov: 32, rotation: [0, Math.PI / 30, 0] } : isMobile1 ? { position: [5.3, -3, 50], fov: 22, rotation: [0, Math.PI / 30, 0] } : isMobile2 ? { position: [5.3, -1, 50], fov: 18, rotation: [0, Math.PI / 30, 0] } : { position: [3, 2, 20], fov: 33, rotation: [0, Math.PI / 30, 0] }}
-  >
-    {technologies.map((technology, index) => (
-      <Suspense key={technology.name} fallback={null}>
-        <BallCanvas
-          key={technology.name}
-          icon={technology.icon}
-          index={index}
-          rows={rows}
-          cols={cols}
-          title={technology.name}
-          onPointerOver={() => setHoveredTitle(technology.name)}
-          onPointerOut={() => setHoveredTitle(null)}
-          onTouchStart={(title, event) => handlePointerDown(title, event)}
-        />
-      </Suspense>
-    ))}
-  </Canvas>
-</div>
-
+      <div style={{ ...canvasStyle }} className="flex flex-row flex-wrap justify-center gap-0 items-center">
+        <Canvas
+          style={{ width: '100%', height: '80%' }}
+          frameloop={isMobile ? "demand" : "always"}
+          dpr={[1, isMobile ? 1 : 1.5]}
+          gl={{ 
+            powerPreference: "high-performance",
+            antialias: false,
+            alpha: false,
+            stencil: false,
+            depth: true,
+            precision: "lowp"
+          }}
+          camera={isMobile ? { position: [5.3, -6.2, 50], fov: 28, rotation: [0, Math.PI / 30, 0] } : isMobile1 ? { position: [5.3, -3, 50], fov: 50, rotation: [0, Math.PI / 30, 0] } : isMobile2 ? { position: [5.3, -3.8, 50], fov: 24, rotation: [0, Math.PI / 30, 0] } : { position: [3, -0.5, 20], fov: 47, rotation: [0, Math.PI / 30, 0] }}
+          performance={{ min: 0.5 }}
+        >
+          {technologies.map((technology, index) => (
+            <Suspense 
+              key={technology.name} 
+              fallback={<LoadingFallback />}
+            >
+              <BallCanvas
+                key={technology.name}
+                icon={technology.icon}
+                index={index}
+                rows={rows}
+                cols={cols}
+                title={technology.name}
+                onPointerOver={() => setHoveredTitle(technology.name)}
+                onPointerOut={() => setHoveredTitle(null)}
+                onTouchStart={(title, event) => handlePointerDown(title, event)}
+              />
+            </Suspense>
+          ))}
+        </Canvas>
+      </div>
       {showTooltip && touchedTitle && <Tooltip title={touchedTitle} position={touchPosition} />}
       {hoveredTitle && <Tooltip title={hoveredTitle} position={mousePosition} />}
     </div>

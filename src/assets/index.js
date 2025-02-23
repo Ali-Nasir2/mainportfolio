@@ -1,5 +1,4 @@
-import logo from "./Rlogow.png";
-import Rlogo from "./Rlogo.png";
+import logo from "./Rlogo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -53,23 +52,34 @@ import TCLO from "./company/TCLO.png";
 import carrent from "./carrent.gif";
 import ring from "./ring.gif";
 import budget from "./budget.png";
-import tripguide from "./tripguide.png";
 import Linkedinlogo from "./Linkedinlogo.png";
 import X from "./X.png";
-import RLOG from "./RLOG.png";
 import Cryptotracker from "./Cryptotracker.png";
 import CRM from "./CRM.gif";
 import Calendar from "./Calendar.gif";
-
-
+import emaillogo from "./email.png";
+import recomendation from "./recomendation.png";
+import quiroga from "./company/quiroga.png";
+import Scikit_image from "./tech/Scikit_image.png";
+import CUDA from "./tech/CUDA.png";
+import PyTorch from "./tech/PyTorch.png";
+import TensorFlow from "./tech/TensorFlow.png";
+import Flask from "./tech/Flask.png";
+import Streamlit from "./tech/Streamlit.png";
+import ECS from "./tech/ECS.png";
+import ECR from "./tech/ECR.png";
+import S3 from "./tech/S3.png";
+import EC2 from "./tech/EC2.png";
+import Plotly from "./tech/Plotly.png";
+import Keras from "./tech/Keras.png";
+import ollama from "./tech/ollama.png";
+import Seaborn from "./tech/Seaborn.svg";
 
 export {
   Calendar,
   CRM,
   Cryptotracker,
   budget,
-  Rlogo,
-  RLOG,
   logo,
   backend,
   creator,
@@ -97,7 +107,6 @@ export {
   UTP,
   TCLO,
   carrent,
-  tripguide,
   PowerBI,
   Tableau,
   LookerStudio,
@@ -126,4 +135,21 @@ export {
   SQLserver,
   X,
   ring,
+  emaillogo,
+  recomendation,
+  quiroga,
+  CUDA,
+  Scikit_image,
+  PyTorch,
+  TensorFlow,
+  Flask,
+  Streamlit,
+  ECS,
+  ECR,
+  S3,
+  EC2,
+  Plotly,
+  Seaborn,
+  Keras,
+  ollama,
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
+import { useLanguage } from '../context/LanguageContext';
 
 import { styles } from "../styles";
 import { services } from "../constants";
@@ -21,14 +22,16 @@ const ServiceCard = ({ index, title, icon }) => (
         }}
         className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
       >
-        <img
-          src={icon}
-          alt='web-development'
-          className='w-16 h-16 object-contain'
-        />
+        {icon && (
+          <img
+            src={icon}
+            alt={title || 'service-icon'}
+            className='w-16 h-16 object-contain'
+          />
+        )}
 
         <h3 className='text-white text-[20px] font-bold text-center'>
-          {title}
+          {title || ''}
         </h3>
       </div>
     </motion.div>
@@ -36,22 +39,28 @@ const ServiceCard = ({ index, title, icon }) => (
 );
 
 const About = () => {
+  const { currentLanguage, t } = useLanguage();
+  
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={styles.sectionSubText}>{t('introduction')}</p>
+        <h2 className={styles.sectionHeadText}>{t('overview')}</h2>
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary text-[17px] max-w-5xl leading-[30px]'
       >
-Experienced software developer specializing in mathematics and data analytics. Proficient in TypeScript, JavaScript, React, Node.js, Three.js. Skilled in Excel, Google Sheets, Looker Studio, Power BI, Tableau, Google AppScript for data management and visualization. Solid SQL and Python data analysis skills using Pandas, NumPy, Matplotlib, and Django. Collaborative and adaptable, focused on creating efficient, scalable solutions. Ready to bring your ideas to life.
-     </motion.p>
+        {t('aboutDescription')}
+      </motion.p>
       <div className='mt-20 flex flex-wrap gap-10'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
+        {services[currentLanguage]?.map((service, index) => (
+          <ServiceCard 
+            key={`service-${index}`}
+            index={index} 
+            {...service} 
+          />
+        )) || []}
       </div>
     </>
   );

@@ -13,7 +13,7 @@ const BallCanvas = ({ icon, index, rows, cols, title, onPointerOver, onPointerOu
       setIsMobile(window.innerWidth <= 550);
     };
 
-    handleResize(); // Set initial value
+    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -23,6 +23,12 @@ const BallCanvas = ({ icon, index, rows, cols, title, onPointerOver, onPointerOu
 
   const x = ((index % cols) * 5 - (cols * 5) / 2) / 2.75;
   const y = (Math.floor(index / cols) * 5 - (rows * 5) / 2) / 2.7;
+
+  const floatConfig = {
+    speed: isMobile ? 0.5 : 1.6,
+    rotationIntensity: isMobile ? 0.05 : 0.5,
+    floatIntensity: isMobile ? 0.5 : 1
+  };
 
   const handleTouchStart = (event) => {
     const touchX = event.touches[0].clientX;
@@ -36,7 +42,7 @@ const BallCanvas = ({ icon, index, rows, cols, title, onPointerOver, onPointerOu
   return (
     <>
       <Suspense fallback={<CanvasLoader />}>
-        <Float speed={isMobile ? 0.8 : 1.6} rotationIntensity={isMobile ? 0.1 : 0.5} floatIntensity={isMobile ? 1 : 1}>
+        <Float {...floatConfig}>
           <ambientLight intensity={0.00001} />
           <directionalLight position={[1, 1, 5]} intensity={0.12} />
           <IcosahedronComponent
@@ -46,6 +52,7 @@ const BallCanvas = ({ icon, index, rows, cols, title, onPointerOver, onPointerOu
             onPointerOver={() => onPointerOver({ title, position: { x: 1 + x, y: -y } })}
             onPointerOut={onPointerOut}
             onTouchStart={handleTouchStart}
+            isMobile={isMobile}
           />
         </Float>
       </Suspense>

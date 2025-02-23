@@ -38,9 +38,42 @@ Built with React-Three-Fiber and Tailwind CSS, this portfolio provides an intera
 
 As a Data Analyst, I specialize in:
 
-- **SQL:** Proficient in SQL Server, MySQL, and PostgreSQL.
-- **Python:** Experienced in Pandas, NumPy, SciPy, and Matplotlib.
-- **Data Visualization:** Skilled in Tableau, PowerBI, Excel (VLookup, Conditional Formatting, Pivot Tables), Google Sheets, AppScripts, and Looker Studio.
+- **SQL:** Proficient in SQL Server, MySQL, and PostgreSQL
+- **Python:** Experienced in Pandas, NumPy, SciPy, Matplotlib, Selenium, OpenCV, PyMuPDF (fitz), and skimage
+- **Data Visualization:** Skilled in Tableau, PowerBI, Excel (VLookup, Conditional Formatting, Pivot Tables), Google Sheets, AppScripts, and Looker Studio
+- **Cloud & DevOps:** Experience with AWS, Docker, ECR, ECS, and CI/CD pipelines
+- **Machine Learning:** Implementation of forecasting algorithms and image processing
+- **Blockchain:** Knowledge of cryptographic principles, Solidity smart contracts, and DeFi development
+- **Additional Skills:** 
+  - Web scraping automation
+  - PDF processing and duplicate detection
+  - Time series analysis
+  - Data transformation and ETL processes
+  - CRM systems and customer service
+  
+## Projects Highlight
+
+### Data Analysis Projects
+- Developed machine learning-based forecasting application with:
+  - Full AWS deployment using Docker, ECR, and ECS
+  - CI/CD pipeline implementation
+  - SQL database integration
+  - Multi-page dashboard for stakeholder insights
+  - User management system
+
+### PDF Processing Automation
+- Created a sophisticated PDF duplicate detection system:
+  - Processes 22,000+ PDFs and 300,000+ pages monthly
+  - Utilizes Python libraries (fitz, OpenCV, Pandas, skimage)
+  - Implements machine learning for variation detection
+  - Generates CSV reports for easy review
+  - Optimizes storage and processing efficiency
+
+### Blockchain Development
+- Smart contract development for DeFi applications
+- Implementation of DEXs and lending platforms
+- Experience with ASIC hardware configuration
+- Development of trading algorithms using Rust
 
 ## Technologies
 
@@ -86,9 +119,19 @@ To run this portfolio locally, follow these steps:
 Explore the portfolio to discover my data analysis projects, view visualizations, and gain insights into my skills and capabilities.
 
 ## Bugs
-**<span style="color:red">(20240131AlphaV0.54) [Bug Fix Pending: Current Resource Consumption Mobile platforms not able to navigate properly]</span>**
-Optimizing resource consumption, including render quality, lighting, and mesh quality, is essential to ensure good performance on mobile devices. Optimization is pending for renders in Blender, and techniques such as surfacing a solid with a decal of points could be explored for optimizing particle summoning.
+**<span style="color:green">(20240225BetaV1.2) [FIXED: Mobile Platform Optimization Complete]</span>**
+- Implemented dynamic render quality adjustment for mobile devices
+- Optimized lighting and mesh quality for better performance
+- Reduced particle system complexity on mobile platforms
+- Added progressive loading for 3D elements
+- Improved overall mobile navigation and responsiveness
 
+## New Features
+- **Multi-language Support:** 
+  - Added Spanish language support (Soporte en español añadido)
+  - Dynamic language switching
+  - Localized content and UI elements
+  - Preserved 3D experience across languages
 
 ## Contributing
 
@@ -101,3 +144,11 @@ This project is licensed under the [MIT License](LICENSE).
 ## Contact
 
 Feel free to reach out to me via email at [0xrphl@gmail.com](mailto:0xrphl@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/0xraphael/).
+
+## Version History
+- 20240225BetaV1.2 - Latest version
+  - Added Spanish language support
+  - Fixed mobile rendering and navigation issues
+  - Optimized resource consumption for mobile devices
+- 20240412BetaV1.1 - Previous stable version
+- 20240131AlphaV0.54 - Initial release with mobile navigation issues

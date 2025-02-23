@@ -23,7 +23,6 @@ import {
     carrent,
     ring,
     budget,
-    tripguide,
     threejs,
     python,
     PowerBI,
@@ -55,9 +54,25 @@ import {
     Cryptotracker,
     CRM,
     Calendar,
+    quiroga,
+    CUDA,
+    Scikit_image,
+    PyTorch,
+    TensorFlow,
+    Flask,
+    Streamlit,
+    ECS,
+    ECR,
+    S3,
+    EC2,
+    Plotly,
+    Seaborn,
+    Keras,
+    ollama,
   } from "../assets";
   
-  export const navLinks = [
+  export const navLinks = {
+    en: [
     {
       id: "about",
       title: "About",
@@ -70,26 +85,61 @@ import {
       id: "contact",
       title: "Contact",
     },
-  ];
+    ],
+    es: [
+      {
+        id: "about",
+        title: "Sobre mí",
+      },
+      {
+        id: "work",
+        title: "Experiencia",
+      },
+      {
+        id: "contact",
+        title: "Contacto",
+      },
+    ]
+  };
   
-  const services = [
+  const services = {
+    en: [
     {
-      title: "Data Analyst",
+      title: "Data Scientist",
       icon: web,
     },
     {
-      title: "React web Developer",
+      title: "React, Three.js web Developer",
       icon: mobile,
     },
     {
-      title: "Future Data Scientist",
+      title: "Data & Business Analyst",
       icon: backend,
     },
     {
       title: "Prospective Mechanical Engineer",
       icon: creator,
     },
-  ];
+    ],
+    es: [
+      {
+        title: "Científico de Datos",
+        icon: web,
+      },
+      {
+        title: "Desarrollador React, Three.js",
+        icon: mobile,
+      },
+      {
+        title: "Analista de Datos",
+        icon: backend,
+      },
+      {
+        title: "Ingeniero Mecánico",
+        icon: creator,
+      },
+    ]
+  };
   
   const Linkedinlog = [
     {
@@ -142,6 +192,62 @@ import {
     {
       name: "PostgreSQL",
       icon: PostgreSQL,
+    },
+    {
+      name: "Scikit_image",
+      icon: Scikit_image,
+    },
+    {
+      name: "CUDA",
+      icon: CUDA,
+    },
+    {
+      name: "PyTorch",
+      icon: PyTorch,
+    },
+    {
+      name: "TensorFlow",
+      icon: TensorFlow,
+    },
+    {
+      name: "Flask",
+      icon: Flask,
+    },
+    {
+      name: "Streamlit",
+      icon: Streamlit,
+    },
+    {
+      name: "ECS",
+      icon: ECS,
+    },
+    {
+      name: "ECR",
+      icon: ECR,
+    },
+    {
+      name: "S3",
+      icon: S3,
+    },
+    {
+      name: "EC2",
+      icon: EC2,
+    },
+    {
+      name: "Plotly",
+      icon: Plotly,
+    },
+    {
+      name: "Seaborn",
+      icon: Seaborn,
+    },
+    {
+      name: "Keras",
+      icon: Keras,
+    },
+    {
+      name: "Ollama",
+      icon: ollama,
     },
     {
       name: "SQLserver",
@@ -261,20 +367,202 @@ import {
     },
   ];
   
-  const experiences = [
+  const experiences = {
+    en: [
     {
-      title: "Data Analyst",
-      company_name: "Independent - Freelance service for Immigration Law Firm",
-      icon: RR,
+      title: "Assistant Chief Engineer",
+      company_name: "Quiroga Law Office, PLLC",
+      icon: quiroga,
       iconBg: "#fff",
-      date: "August 2023 - Present",
+      date: "Promoted in January 2025 - Present",
       points: [
-        "Developed a Python Selenium script to automate the extraction of real-time data from a law firm's Laravel PHP website, focusing on case management metrics. CSV files containing detailed case information, including creation timestamps, status updates, and completion timestamps, were downloaded.",
-        "Processed and cleaned the extracted data using Microsoft Excel, leveraging Power Query for transformation and structuring. Implemented a query function to import data from the downloaded CSV files and utilized Excel's Power Query feature to clean and transform the raw data into a structured format suitable for analysis.",
-        "Designed and implemented an interactive dashboard within Excel to visualize key performance metrics, including case drafting time, status distribution, and case progression dynamics. Excel's pivot tables, charts, and conditional formatting rules were employed for data visualization and analysis.",
-        "The dashboard was utilized by higher hierarchy management, including attorneys, for real-time reporting in management meetings, providing insights into operational efficiency and performance. Engaged in an iterative feedback loop with the immigration paralegal and management to identify and prioritize specific metrics for measuring legal assistant performance and case status accurately. Continued refinement of the dashboard based on evolving data requirements and feedback from stakeholders.",
+        "Led the development of two full-stack web applications using Flask, integrating machine learning models with real-time client data to automate and enhance client interactions for a law firm. Utilized open-source machine learning algorithms, such as EasyOCR and OpenCV, for optical character recognition (OCR) and advanced document processing, enabling efficient data extraction and interpretation from legal documents.",
+        "Developed and deployed an AI agent powered by Claude embeddings within a Retrieval-Augmented Generation (RAG) system and a VectorDB to autonomously fill out immigration forms and interact with client data. Built an AI-driven chatbot using Claude and a RAG system to analyze client data and provide personalized legal advice, customer service support, and streamlined communication, including features like user login, chat history, caching, and agent profiles.",
+        "Utilized AWS services, including ECS, ECR, EC2, and S3, for seamless deployment, containerization, and storage management, enabling scalable and reliable cloud-based solutions for hosting machine learning models and applications. Employed Docker to containerize applications, ensuring consistent environments across development, testing, and production, and streamlining deployment pipelines for both Flask apps and machine learning models.",
+        "Enhanced operational efficiency by automating document processing and client interactions, while ensuring secure handling of client data through encryption and adhering to best practices for data protection, all while maintaining a user-friendly interface.",
       ],
       tags: [
+        {
+          name: "#Pandas",
+          color: "red-text-gradient",
+        },
+        {
+          name: "#RAG",
+          color: "gray-text-gradient",
+        },
+        {
+          name: "#Flask",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "#Docker",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "#AWS (ECS,ECR,S3,EC2)",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "#CI/CD",
+          color: "gray-text-gradient",
+        },
+        {
+          name: "#EasyOCR",
+          color: "red-text-gradient",
+        },
+        {
+          name: "#PyMyPDF",
+          color: "gray-text-gradient",
+        },
+        {
+          name: "#Matplotlib",
+          color: "gray-text-gradient",
+        },
+        {
+          name: "#PostgresSQL",
+          color: "gray-text-gradient",
+        },
+        {
+          name: "#Time Series Forecasting",
+          color: "gray-text-gradient",
+        },
+        {
+          name: "#Numpy",
+          color: "gray-text-gradient",
+        },
+        {
+          name: "#OpenCV",
+          color: "gray-text-gradient",
+        },
+        {
+          name: "#Claude 3.5 API",
+          color: "green-text-gradient",
+        },
+        {
+          name: "#VectorDB and embeddings",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "#Data Processing and Cleaning",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "#CUDA",
+          color: "red-text-gradient",
+        },
+        {
+          name: "#Conditional Formatting",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "#Prompt Caching",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "#Prompt Chain",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "#Performance Metrics",
+          color: "gray-text-gradient",
+        },
+        {
+          name: "#AI/ML Deployment",
+          color: "green-text-gradient",
+        },
+        {
+          name: "#TensorFlow",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "#PyTorch",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "#Reinforcement Learning (RL)",
+          color: "red-text-gradient",
+        },
+        {
+          name: "#Transformer Architecture",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "#Natural Language Processing (NLP)",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "#Attention Mechanisms",
+          color: "orange-text-gradient",
+        },
+      ],
+    },
+    {
+      title: "Data Analyst",
+      company_name: "Quiroga Law Office, PLLC",
+      icon: quiroga,
+      iconBg: "#fff",
+      date: "April 2024 - Promoted in January 2024",
+      points: [
+        "Data Analysis & Visualization: Utilize Python (Pandas, Matplotlib, Seaborn) to extract, clean, and analyze data, creating insightful reports with comprehensive visualizations that highlight trends and performance patterns.",
+        "Web Scraping Automation: Employ Selenium to automate data extraction from online sources, ensuring access to up-to-date information crucial for analysis.",
+        "Use Excel and Power Query to maintain data integrity, transforming large datasets for usability and robust reporting outcomes.",
+        "Developed a fully functional app with machine learning algorithms for forecasting, backed by a SQL database, deployed on AWS with CI/CD pipeline, Docker, ECR, and ECS for scalability and reliability; features include user management and multipage support for stakeholder insights.",
+        "Utilized time series forecasting techniques to generate new growth performance indicators, providing valuable insights for future planning and decision-making.",
+        "I developed a script to scan PDF repositories for duplicate pages, processing over 22,000 PDFs and 300,000 pages monthly. Using Python libraries like fitz (PyMuPDF), OpenCV, Pandas, and skimage, the script applies image processing and machine learning algorithms to detect duplicates, even with minor variations. This ensures full tracking, prevents duplicate uploads, and optimizes storage and time efficiency. Results are output in CSV format for easy review.",
+      ],
+      tags: [
+        {
+          name: "#Pandas",
+          color: "red-text-gradient",
+        },
+        {
+          name: "#Power Query",
+          color: "gray-text-gradient",
+        },
+        {
+          name: "#Streamlit",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "#Docker",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "#AWS (ECS,ECR,S3,EC2)",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "#CI/CD",
+          color: "gray-text-gradient",
+        },
+        {
+          name: "#SCIKIT IMAGE",
+          color: "red-text-gradient",
+        },
+        {
+          name: "#PyMyPDF",
+          color: "gray-text-gradient",
+        },
+        {
+          name: "#Matplotlib",
+          color: "gray-text-gradient",
+        },
+        {
+          name: "#Plotly",
+          color: "gray-text-gradient",
+        },
+        {
+          name: "#Time Series Forecasting",
+          color: "gray-text-gradient",
+        },
+        {
+          name: "#Numpy",
+          color: "gray-text-gradient",
+        },
+        {
+          name: "#OpenCV",
+          color: "gray-text-gradient",
+        },
         {
           name: "#Microsoft Excel",
           color: "green-text-gradient",
@@ -310,11 +598,66 @@ import {
       ],
     },
     {
+      title: "Data Analyst",
+      company_name: "Independent - Freelance service for Immigration Law Firm",
+      icon: RR,
+      iconBg: "#fff",
+      date: "August 2023 - March 2024",
+      points: [
+        "Developed a Python Selenium script to automate the extraction of real-time data from a law firm's Laravel PHP website, focusing on case management metrics. Used Visual Basic for Applications (VBA) to automate downloading and querying CSV files containing case information, ensuring up-to-date data for analysis.",
+        "Processed and cleaned the extracted data using Microsoft Excel, leveraging Power Query for transformation and structuring. Implemented functions to import, clean, and transform raw data into a structured format suitable for detailed analysis.",
+        "Designed and implemented an interactive Excel dashboard to visualize key performance metrics such as case drafting time, status distribution, and case progression dynamics. Utilized Excel's pivot tables, charts, and conditional formatting for data visualization and analysis.",
+        "Created custom PDF reports using VBA to automatically generate performance summaries and send them to management. The dashboard and reports were used in management meetings to provide insights into operational efficiency, with ongoing refinement based on feedback from stakeholders.",
+      ],
+      tags: [
+        {
+          name: "#Microsoft Excel",
+          color: "green-text-gradient",
+        },
+        {
+          name: "#Python Selenium Scripting Automatization",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "#Data Processing and Cleaning",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "#Pivot Tables",
+          color: "red-text-gradient",
+        },
+        {
+          name: "#Conditional Formatting",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "#Excel Dashboard Design",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "#Report Storytelling",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "#Performance Metrics",
+          color: "gray-text-gradient",
+        },
+        {
+          name: "#Visual Basic",
+          color: "red-text-gradient",
+        },
+        {
+          name: "#Power Query",
+          color: "gray-text-gradient",
+        },
+      ],
+    },
+    {
       title: "Data Analyst and Intake Specialist",
       company_name: "The Cruz Law Office APC",
       icon: TCLO,
       iconBg: "#fff",
-      date: "July 2022 - Present",
+      date: "July 2022 - May 2024",
       points: [
         "Served as an intake and sales specialist, assessing immigration cases eligibility, retaining clients, and handling payments. Utilizing Google Apps Script, Google Calendar API, and Python Selenium automation, I developed a CRM call log tool in Google Sheets, boosting data capture by 4 times compared to previous methods. This tool expanded data variables to over 16 dimesions in the database structure for potential client metadata, including client details and interaction types like location, potential service, personal data and information regarding his legal needs and current situation.",
         "Effective communication skills were crucial in translating this data into actionable insights for management meetings, aiding informed decision-making and deeper client understanding among team members and stakeholders.",
@@ -362,15 +705,15 @@ import {
     }, 
     {
       title: "Blockchain Engineer Trainee",
-      company_name: "Independent",
+      company_name: "Independent - Personal projects",
       icon: RR,
       iconBg: "#fff",
       date: "March 2020 - Present",
       points: [
-        "Deep comprehension of cryptographic principles fundamental to blockchain, including hash functions, digital signatures, and cryptographic hashing algorithms. Proficiency in cryptographic protocols such as secure multi-party computation (MPC), zero-knowledge proofs (ZKPs), and homomorphic encryption, and their application in blockchain systems. Expertise in blockchain consensus mechanisms like Proof of Work (PoW) and Proof of Stake (PoS), understanding their implications for network security and scalability.",
-        "Advanced understanding and proficiency in Solidity programming language, encompassing syntax, data structures, and features. Extensive experience in crafting smart contracts for various DeFi applications like decentralized exchanges (DEXs), lending platforms, and yield farming protocols. In-depth knowledge of Solidity security vulnerabilities and best practices, ensuring the development of secure and efficient smart contracts.",
-        "Garnered extensive experience in managing ASIC ownership, network validation, and the setup process within mining pools and worldwide hosting services. This involves procuring ASIC hardware, configuring and maintaining its operational integrity for network validation through PoW mechanisms, and efficiently setting up ASIC miners within mining pools to enhance block mining probabilities and reward acquisition.",
-        "Experienced cryptocurrency trader skilled in technical analysis, fundamental evaluation, and advanced trading strategies. Proficient in utilizing Rust for executing DEFI arbitrage and conducting deep trade analysis employing Elliott Wave techniques, liquidity analysis, and order block assessment. Expertise includes implementing algorithmic trading strategies, managing risk, and optimizing profitability through informed investment decisions."
+        "Deep understanding of cryptographic principles, including hash functions, digital signatures, and cryptographic algorithms. Proficient in secure multi-party computation (MPC), zero-knowledge proofs (ZKPs), homomorphic encryption, and blockchain consensus mechanisms like Proof of Work (PoW) and Proof of Stake (PoS), with an emphasis on network security and scalability.",
+        "Advanced proficiency in Solidity, including syntax, data structures, and features. Extensive experience in developing smart contracts for DeFi applications (DEXs, lending platforms, yield farming), with a focus on security vulnerabilities and best practices.",
+        "Expertise in managing ASIC hardware ownership, network validation, and setup within mining pools. Skilled in procuring, configuring, and maintaining ASIC miners for efficient PoW validation and enhancing block mining rewards.",
+        "Experienced cryptocurrency trader with advanced technical analysis, fundamental evaluation, and trading strategies. Proficient in using Rust for DeFi arbitrage, Elliott Wave, liquidity analysis, and order block assessment, as well as implementing algorithmic trading strategies to manage risk and optimize profitability."
         ,
       ],
       tags: [
@@ -516,36 +859,592 @@ import {
         },
       ],
     },
-  ];
+    ],
+    es: [
+      {
+        title: "Ingeniero Jefe Asistente",
+        company_name: "Quiroga Law Office, PLLC",
+        icon: quiroga,
+        iconBg: "#fff",
+        date: "Promovido en Enero 2025 - Presente",
+        points: [
+          "Lideré el desarrollo de dos aplicaciones web full-stack utilizando Flask, integrando modelos de machine learning con datos de clientes en tiempo real para automatizar y mejorar las interacciones con clientes de un bufete de abogados. Utilicé algoritmos de machine learning de código abierto, como EasyOCR y OpenCV, para reconocimiento óptico de caracteres (OCR) y procesamiento avanzado de documentos, permitiendo una extracción e interpretación eficiente de documentos legales.",
+          "Desarrollé e implementé un agente de IA impulsado por embeddings de Claude dentro de un sistema de Generación Aumentada por Recuperación (RAG) y una VectorDB para completar automáticamente formularios de inmigración e interactuar con datos de clientes. Construí un chatbot impulsado por IA usando Claude y un sistema RAG para analizar datos de clientes y proporcionar asesoramiento legal personalizado, soporte de servicio al cliente y comunicación optimizada, incluyendo características como inicio de sesión de usuario, historial de chat, caché y perfiles de agentes.",
+          "Utilicé servicios de AWS, incluyendo ECS, ECR, EC2 y S3, para una implementación sin problemas, contenerización y gestión de almacenamiento, permitiendo soluciones escalables y confiables basadas en la nube para alojar modelos de machine learning y aplicaciones. Empleé Docker para contenerizar aplicaciones, asegurando entornos consistentes en desarrollo, pruebas y producción, y optimizando pipelines de implementación tanto para aplicaciones Flask como para modelos de machine learning.",
+          "Mejoré la eficiencia operativa automatizando el procesamiento de documentos y las interacciones con clientes, mientras aseguraba el manejo seguro de datos de clientes a través de encriptación y adherencia a las mejores prácticas para la protección de datos, todo mientras mantenía una interfaz amigable para el usuario.",
+        ],
+        tags: [
+          {
+            name: "#Pandas",
+            color: "red-text-gradient",
+          },
+          {
+            name: "#RAG",
+            color: "gray-text-gradient",
+          },
+          {
+            name: "#Flask",
+            color: "pink-text-gradient",
+          },
+          {
+            name: "#Docker",
+            color: "blue-text-gradient",
+          },
+          {
+            name: "#AWS (ECS,ECR,S3,EC2)",
+            color: "orange-text-gradient",
+          },
+          {
+            name: "#CI/CD",
+            color: "gray-text-gradient",
+          },
+          {
+            name: "#EasyOCR",
+            color: "red-text-gradient",
+          },
+          {
+            name: "#PyMyPDF",
+            color: "gray-text-gradient",
+          },
+          {
+            name: "#Matplotlib",
+            color: "gray-text-gradient",
+          },
+          {
+            name: "#PostgresSQL",
+            color: "gray-text-gradient",
+          },
+          {
+            name: "#Time Series Forecasting",
+            color: "gray-text-gradient",
+          },
+          {
+            name: "#Numpy",
+            color: "gray-text-gradient",
+          },
+          {
+            name: "#OpenCV",
+            color: "gray-text-gradient",
+          },
+          {
+            name: "#Claude 3.5 API",
+            color: "green-text-gradient",
+          },
+          {
+            name: "#VectorDB and embeddings",
+            color: "yellow-text-gradient",
+          },
+          {
+            name: "#Data Processing and Cleaning",
+            color: "blue-text-gradient",
+          },
+          {
+            name: "#CUDA",
+            color: "red-text-gradient",
+          },
+          {
+            name: "#Conditional Formatting",
+            color: "pink-text-gradient",
+          },
+          {
+            name: "#Prompt Caching",
+            color: "blue-text-gradient",
+          },
+          {
+            name: "#Prompt Chain",
+            color: "orange-text-gradient",
+          },
+          {
+            name: "#Performance Metrics",
+            color: "gray-text-gradient",
+          },
+          {
+            name: "#AI/ML Deployment",
+            color: "green-text-gradient",
+          },
+          {
+            name: "#TensorFlow",
+            color: "yellow-text-gradient",
+          },
+          {
+            name: "#PyTorch",
+            color: "blue-text-gradient",
+          },
+          {
+            name: "#Reinforcement Learning (RL)",
+            color: "red-text-gradient",
+          },
+          {
+            name: "#Transformer Architecture",
+            color: "pink-text-gradient",
+          },
+          {
+            name: "#Natural Language Processing (NLP)",
+            color: "blue-text-gradient",
+          },
+          {
+            name: "#Attention Mechanisms",
+            color: "orange-text-gradient",
+          },
+        ],
+      },
+      {
+        title: "Analista de Datos",
+        company_name: "Quiroga Law Office, PLLC",
+        icon: quiroga,
+        iconBg: "#fff",
+        date: "Abril 2024 - Promovido en Enero 2024",
+        points: [
+          "Análisis y Visualización de Datos: Utilización de Python (Pandas, Matplotlib, Seaborn) para extraer, limpiar y analizar datos, creando informes perspicaces con visualizaciones completas que resaltan tendencias y patrones de rendimiento.",
+          "Automatización de Web Scraping: Empleo de Selenium para automatizar la extracción de datos de fuentes en línea, asegurando acceso a información actualizada crucial para el análisis.",
+          "Uso de Excel y Power Query para mantener la integridad de los datos, transformando grandes conjuntos de datos para usabilidad y resultados de informes robustos.",
+          "Desarrollé una aplicación completamente funcional con algoritmos de machine learning para pronósticos, respaldada por una base de datos SQL, implementada en AWS con pipeline CI/CD, Docker, ECR y ECS para escalabilidad y confiabilidad; las características incluyen gestión de usuarios y soporte multipágina para insights de stakeholders.",
+          "Utilicé técnicas de pronóstico de series temporales para generar nuevos indicadores de rendimiento de crecimiento, proporcionando insights valiosos para la planificación futura y la toma de decisiones.",
+          "Desarrollé un script para escanear repositorios PDF en busca de páginas duplicadas, procesando más de 22,000 PDFs y 300,000 páginas mensualmente. Usando bibliotecas Python como fitz (PyMuPDF), OpenCV, Pandas y skimage, el script aplica procesamiento de imágenes y algoritmos de machine learning para detectar duplicados, incluso con variaciones menores. Esto asegura un seguimiento completo, previene cargas duplicadas y optimiza la eficiencia de almacenamiento y tiempo. Los resultados se exportan en formato CSV para una fácil revisión.",
+        ],
+        tags: [
+          {
+            name: "#Pandas",
+            color: "red-text-gradient",
+          },
+          {
+            name: "#Power Query",
+            color: "gray-text-gradient",
+          },
+          {
+            name: "#Streamlit",
+            color: "pink-text-gradient",
+          },
+          {
+            name: "#Docker",
+            color: "blue-text-gradient",
+          },
+          {
+            name: "#AWS (ECS,ECR,S3,EC2)",
+            color: "orange-text-gradient",
+          },
+          {
+            name: "#CI/CD",
+            color: "gray-text-gradient",
+          },
+          {
+            name: "#SCIKIT IMAGE",
+            color: "red-text-gradient",
+          },
+          {
+            name: "#PyMyPDF",
+            color: "gray-text-gradient",
+          },
+          {
+            name: "#Matplotlib",
+            color: "gray-text-gradient",
+          },
+          {
+            name: "#Plotly",
+            color: "gray-text-gradient",
+          },
+          {
+            name: "#Time Series Forecasting",
+            color: "gray-text-gradient",
+          },
+          {
+            name: "#Numpy",
+            color: "gray-text-gradient",
+          },
+          {
+            name: "#OpenCV",
+            color: "gray-text-gradient",
+          },
+          {
+            name: "#Microsoft Excel",
+            color: "green-text-gradient",
+          },
+          {
+            name: "#Python Selenium Scripting Automatization",
+            color: "yellow-text-gradient",
+          },
+          {
+            name: "#Data Processing and Cleaning",
+            color: "blue-text-gradient",
+          },
+          {
+            name: "#Pivot Tables",
+            color: "red-text-gradient",
+          },
+          {
+            name: "#Conditional Formatting",
+            color: "pink-text-gradient",
+          },
+          {
+            name: "#Excel Dashboard Design",
+            color: "blue-text-gradient",
+          },
+          {
+            name: "#Report Storytelling",
+            color: "orange-text-gradient",
+          },
+          {
+            name: "#Performance Metrics",
+            color: "gray-text-gradient",
+          },
+        ],
+      },
+      {
+        title: "Analista de Datos",
+        company_name: "Independiente - Servicio freelance para Firma de Abogados de Inmigración",
+        icon: RR,
+        iconBg: "#fff",
+        date: "Agosto 2023 - Marzo 2024",
+        points: [
+          "Desarrollé un script en Python con Selenium para automatizar la extracción de datos en tiempo real del sitio web Laravel PHP de un bufete de abogados, enfocándome en métricas de gestión de casos. Utilicé Visual Basic for Applications (VBA) para automatizar la descarga y consulta de archivos CSV que contienen información de casos, asegurando datos actualizados para el análisis.",
+          "Procesé y limpié los datos extraídos usando Microsoft Excel, aprovechando Power Query para transformación y estructuración. Implementé funciones para importar, limpiar y transformar datos brutos en un formato estructurado adecuado para análisis detallado.",
+          "Diseñé e implementé un dashboard interactivo en Excel para visualizar métricas clave de rendimiento como tiempo de redacción de casos, distribución de estados y dinámica de progresión de casos. Utilicé tablas dinámicas, gráficos y formato condicional de Excel para visualización y análisis de datos.",
+          "Creé informes PDF personalizados usando VBA para generar automáticamente resúmenes de rendimiento y enviarlos a la gerencia. El dashboard y los informes se utilizaron en reuniones de gestión para proporcionar insights sobre la eficiencia operativa, con refinamiento continuo basado en feedback de stakeholders.",
+        ],
+        tags: [
+          {
+            name: "#Microsoft Excel",
+            color: "green-text-gradient",
+          },
+          {
+            name: "#Python Selenium Scripting Automatization",
+            color: "yellow-text-gradient",
+          },
+          {
+            name: "#Data Processing and Cleaning",
+            color: "blue-text-gradient",
+          },
+          {
+            name: "#Pivot Tables",
+            color: "red-text-gradient",
+          },
+          {
+            name: "#Conditional Formatting",
+            color: "pink-text-gradient",
+          },
+          {
+            name: "#Excel Dashboard Design",
+            color: "blue-text-gradient",
+          },
+          {
+            name: "#Report Storytelling",
+            color: "orange-text-gradient",
+          },
+          {
+            name: "#Performance Metrics",
+            color: "gray-text-gradient",
+          },
+          {
+            name: "#Visual Basic",
+            color: "red-text-gradient",
+          },
+          {
+            name: "#Power Query",
+            color: "gray-text-gradient",
+          },
+        ],
+      },
+      {
+        title: "Analista de Datos y Especialista de Intake",
+        company_name: "The Cruz Law Office APC",
+        icon: TCLO,
+        iconBg: "#fff",
+        date: "Julio 2022 - Mayo 2024",
+        points: [
+          "Serví como especialista de intake y ventas, evaluando la elegibilidad de casos de inmigración, reteniendo clientes y manejando pagos. Utilizando Google Apps Script, API de Google Calendar y automatización con Python Selenium, desarrollé una herramienta de registro de llamadas CRM en Google Sheets, aumentando la captura de datos 4 veces en comparación con métodos anteriores. Esta herramienta expandió las variables de datos a más de 16 dimensiones en la estructura de la base de datos para metadatos de clientes potenciales, incluyendo detalles del cliente y tipos de interacción como ubicación, servicio potencial, datos personales e información sobre sus necesidades legales y situación actual.",
+          "Las habilidades de comunicación efectiva fueron cruciales para traducir estos datos en insights accionables para reuniones de gestión, ayudando a la toma de decisiones informada y una comprensión más profunda del cliente entre miembros del equipo y stakeholders.",
+          "Se creó una base de datos robusta para capturar todas las interacciones para análisis detallado e insights de marketing. La integración con el dashboard de Looker Studio permitió un análisis fluido y segmentación de clientes. La generación automatizada de informes optimizó los procesos de adquisición de clientes.",
+          "La integración con sistemas de gestión de casos y Google Calendar facilitó la creación directa de perfiles y eventos desde el registro de llamadas. La automatización con Google Apps Script mejoró la eficiencia del flujo de trabajo, mientras que nuestro enfoque inquebrantable en la responsabilidad aseguró una supervisión completa sobre cada tarea asignada a asistentes virtuales. Los procesos transparentes y sistemas integrados reforzaron aún más nuestro compromiso con la precisión en los informes y la gestión eficiente de tareas.",
+        ],
+        tags: [
+          {
+            name: "#Google Sheets",
+            color: "green-text-gradient",
+          },
+          {
+            name: "#Google Calendar API",
+            color: "blue-text-gradient",
+          },
+          {
+            name: "#Python ",
+            color: "yellow-text-gradient",
+          },
+          {
+            name: "#Google Apps Script",
+            color: "red-text-gradient",
+          },
+          {
+            name: "#Actionable Insights",
+            color: "pink-text-gradient",
+          },
+          {
+            name: "#Looker Studio",
+            color: "blue-text-gradient",
+          },
+          {
+            name: "#Report Generation",
+            color: "orange-text-gradient",
+          },
+          {
+            name: "#Accountability",
+            color: "gray-text-gradient",
+          },
+          {
+            name: "#Automatization",
+            color: "green-text-gradient",
+          },
+        ],
+      }, 
+      {
+        title: "Aprendiz de Ingeniero Blockchain",
+        company_name: "Independiente - Proyectos personales",
+        icon: RR,
+        iconBg: "#fff",
+        date: "Marzo 2020 - Presente",
+        points: [
+          "Comprensión profunda de principios criptográficos, incluyendo funciones hash, firmas digitales y algoritmos criptográficos. Competente en computación segura multipartita (MPC), pruebas de conocimiento cero (ZKPs), encriptación homomórfica y mecanismos de consenso blockchain como Prueba de Trabajo (PoW) y Prueba de Participación (PoS), con énfasis en seguridad y escalabilidad de red.",
+          "Competencia avanzada en Solidity, incluyendo sintaxis, estructuras de datos y características. Amplia experiencia en desarrollo de contratos inteligentes para aplicaciones DeFi (DEXs, plataformas de préstamos, yield farming), con enfoque en vulnerabilidades de seguridad y mejores prácticas.",
+          "Experiencia en gestión de propiedad de hardware ASIC, validación de red y configuración dentro de pools de minería. Habilidad en adquisición, configuración y mantenimiento de mineros ASIC para validación PoW eficiente y mejora de recompensas de minería de bloques.",
+          "Trader de criptomonedas experimentado con análisis técnico avanzado, evaluación fundamental y estrategias de trading. Competente en uso de Rust para arbitraje DeFi, Onda Elliott, análisis de liquidez y evaluación de bloques de órdenes, así como implementación de estrategias de trading algorítmico para gestionar riesgo y optimizar rentabilidad.",
+        ],
+        tags: [
+          {
+            name: "#Crypto Hashing Algorithms",
+            color: "orange-text-gradient",
+          },
+          {
+            name: "#PoW",
+            color: "green-text-gradient",
+          },
+          {
+            name: "#Solidity",
+            color: "blue-text-gradient",
+          },
+          {
+            name: "#DeFi/DEXs",
+            color: "purple-text-gradient",
+          },
+          {
+            name: "#Risk Management",
+            color: "pink-text-gradient",
+          },
+          {
+            name: "#Rust",
+            color: "gray-text-gradient",
+          },
+          {
+            name: "#ASIC",
+            color: "red-text-gradient",
+          },
+        ],
+      },
+      {
+        title: "Especialista en Servicio al Cliente de Facturación y Ventas",
+        company_name: "AT&T | Accedo Technologies",
+        icon: att,
+        iconBg: "#FFF",
+        date: "Enero 2017 - Febrero 2019",
+        points: [
+          "Competente en Gestión de Relaciones con Clientes (CRM): Gestioné eficazmente consultas de facturación y ventas de clientes de AT&T, utilizando sistemas CRM avanzados para navegar cuentas, abordar preocupaciones y procesar transacciones de manera rápida y precisa.",
+          "Habilidades Excepcionales de Comunicación: Demostré fuertes habilidades de comunicación verbal y escrita al proporcionar explicaciones claras y concisas de detalles de facturación, ofertas de ventas y opciones de servicio a clientes, fomentando interacciones positivas y resolviendo problemas rápidamente.",
+          "Experiencia en Resolución de Problemas: Desarrollé una aguda aptitud para solucionar y resolver discrepancias complejas de facturación, consultas de ventas y problemas relacionados con el servicio, empleando pensamiento analítico e ingenio para asegurar la satisfacción y retención del cliente.",
+          "Optimización de Ventas e Ingresos: Aproveché el conocimiento del producto y técnicas de comunicación persuasiva para identificar oportunidades de venta adicional y cruzada, contribuyendo al aumento de generación de ingresos y al logro de objetivos de ventas dentro del entorno de servicio al cliente de AT&T.",
+        ],
+        tags: [
+          {
+            name: "#Customer Service",
+            color: "purple-text-gradient",
+          },
+          {
+            name: "#Sales Support",
+            color: "green-text-gradient",
+          },
+          {
+            name: "#Communication Skills",
+            color: "blue-text-gradient",
+          },
+          {
+            name: "#Conflict Resolution",
+            color: "pink-text-gradient",
+          },
+          {
+            name: "#Data Entry",
+            color: "red-text-gradient",
+          },
+          {
+            name: "#Multitasking",
+            color: "yellow-text-gradient",
+          },
+        ],
+      },
+      {
+        title: "Profesor de Matemáticas, Física y Ciencias de la Ingeniería",
+        company_name: "Independiente",
+        icon: RR,
+        iconBg: "#FFF",
+        date: "Enero 2016 - Diciembre 2020",
+        points: [
+          "Offered private tutoring sessions in thermodynamics, fluid mechanics, and materials science to university engineering students, catering to diverse college students from various colleges and faculties across the city.",
+          "Provided independent, personalized math and physics instruction to high school students requiring additional one-on-one tutoring.",
+          "Designed customized lessons in math, physics, and engineering subjects like statics, dynamics, and strength of materials to civil, electrical, and mechanical engineering undergraduates, preparing students for projects, proofs, and tests through personalized instruction and tutoring.",
+        ],
+        tags: [
+          {
+            name: "#Multivariable Calculus",
+            color: "orange-text-gradient",
+          },
+          {
+            name: "#Statics, Dynamics, and Strength of Materials",
+            color: "green-text-gradient",
+          },
+          {
+            name: "#Physics",
+            color: "blue-text-gradient",
+          },
+          {
+            name: "#Thermodynamics",
+            color: "pink-text-gradient",
+          },
+          {
+            name: "#Statistics",
+            color: "gray-text-gradient",
+          },
+          {
+            name: "#Teaching",
+            color: "red-text-gradient",
+          },
+        ],
+      },
+      {
+        title: "Ingeniería Mecánica",
+        company_name: "Universidad Tecnológica de Pereira",
+        icon: UTP,
+        iconBg: "#000000",
+        date: "Enero 2015 - Diciembre 2021",
+        points: [
+          "Focus on specializing in mathematics, I serve as a teaching designated tutor for the faculty of basic sciences (2015-2018), where I provide instructional support to students ranging from basic multivariable calculus, linear algebra to advanced topics such as complex systems analysis and differential equations.",
+          "In 2017, I participated in a project with the technology and innovation branch of the National Education Service (Tecnoparque SENA), Our task was to design an irrigation system for a greenhouse, financed by the city, aimed at automating the irrigation process for seeds and crops before transplantation to the farmland. Managing timelines, resources, and stakeholder expectations during this project sharpened my project management skills, preparing me for future leadership roles in engineering endeavors and problem solving.",
+          "Developed a comprehensive understanding of systems design failure and fatigue theory, gaining valuable insights into the complexities of mechanical systems and their performance under varying conditions. Proficient in applying linear algebra techniques, particularly in determining eigenvalues and eigenvectors of stress tensor systems, essential for both theoretical analysis and practical applications such as finite element analysis (FEA). Hands-on experience in implementing and interpreting analysis results using industry-standard software tools such as SolidWorks Simulation and ANSYS, enabling the validation and optimization of mechanical designs for robustness and performance.",
+          "Certified SolidWorks Mechanical Design Associate, demonstrating proficiency in utilizing SolidWorks software for mechanical design tasks and enhancing engineering workflows."
+        ],
+        tags: [
+          {
+            name: "#Thermodynamics",
+            color: "orange-text-gradient",
+          },
+          {
+            name: "#CAD/CAM/CAE/CSWA",
+            color: "green-text-gradient",
+          },
+          {
+            name: "#FEA",
+            color: "blue-text-gradient",
+          },
+          {
+            name: "#Fourier Transform",
+            color: "pink-text-gradient",
+          },
+          {
+            name: "#Time Series Analysis",
+            color: "gray-text-gradient",
+          },
+        ],
+      },
+    ]
+  };
   
-  const testimonials = [
+  const testimonials = {
+    en: [
     {
       testimonial:
-        "personal or proffesional references 11",
-      name: "Name1",
-      designation: "Position1",
-      company: "Company 1",
+        "His relentless dedication and impressive achievements across multiple challenging projects. His passion for his craft is evident in every line of code he writes, transforming complex problems into elegant solutions. Raphael's expertise as a coder is extraordinary, consistently pushing the boundaries of innovation and efficiency. His commitment and brilliance have not only advanced our projects but also inspired his peers to strive for excellence. Thank you, Raphael, for your remarkable contributions and the enthusiasm you bring to your work every day!",
+      name: "Joseph Rouse",
+      designation: "COO",
+      company: "Quiroga Law Office, PLLC",
+      image: "https://media.licdn.com/dms/image/v2/C560BAQGuujuxiPcRRA/company-logo_200_200/company-logo_200_200/0/1631370909330?e=1746057600&v=beta&t=NqJj7TqE7m6hAuEAnhunuzpzexeO03Mml21lKy3YM80",
+      url:"https://www.linkedin.com/company/quirogalawoffice",
+      doc:"",
+      email:""
+    },
+    {
+      testimonial:
+          "Raphael truly deserves recognition for his exceptional work on the latest applications. I have chosen loyalty as his core value, but over the past weeks, Raphael has demonstrated all six core values. I'm excited about what's to come for the company, thanks to the applications Raphael has developed on his own in such a short time. I'm really proud to have Raphael on the team!",
+      name: "Katherin Daza",
+      designation: "Enforcement Supervisor",
+      company: "Quiroga Law Office, PLLC",
+      image: "https://media.licdn.com/dms/image/v2/C560BAQGuujuxiPcRRA/company-logo_200_200/company-logo_200_200/0/1631370909330?e=1746057600&v=beta&t=NqJj7TqE7m6hAuEAnhunuzpzexeO03Mml21lKy3YM80",
+      url:"https://www.linkedin.com/company/quirogalawoffice",
+      doc:"",
+      email:""
+    },
+    {
+      testimonial:"Raphael demonstrated not only exceptional intelligence and a relentless work ethic but also an extraordinary aptitude for building lasting client relationships. His natural ability to connect with people was complemented by his proactive mindset, stellar time management skills, and impressive multitasking abilities. These qualities, combined with his meticulous attention to detail and a keen ability to innovate, made him an indispensable asset to our team and a driving force behind the success of our marketing and sales efforts.",
+      name: "Narciso Cruz",
+      designation: "CEO",
+      company: "The Cruz Law Office APC",
+      image: "https://justatic.com/profile-images/1502461-1452726125-s.jpg",
+      url:"https://www.linkedin.com/in/narciso-nar-cruz-9281a523/",
+      doc:"https://drive.google.com/file/d/1zcUoTr0BeKpXBhOTCnfMYTVPZyDx_Kxl/view?usp=sharing",
+      email:"monica@thecruzlawoffice.com"
+    },
+    {
+      testimonial:
+        "Raphael consistently displayed professionalism and dedication in his role. His technical skills, ability to manage multiple tasks efficiently, and excellent communication skills greatly benefited our office, making him a reliable and valuable team member.",
+      name: "Monica Herrera",
+      designation: "COO",
+      company: "The Cruz Law Office APC",
       image: "https://randomuser.me/api/portraits/women/4.jpg",
+      url:"https://www.linkedin.com/company/the-cruz-law-office-apc",
+      doc:"https://drive.google.com/file/d/1zcUoTr0BeKpXBhOTCnfMYTVPZyDx_Kxl/view?usp=sharing",
+      email:"monica@thecruzlawoffice.com"
     },
-    {
-      testimonial:
-        "personal or proffesional references 22",
-      name: "Name2",
-      designation: "Position2",
-      company: "Company 2",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "personal or proffesional references 33",
-      name: "Lisa Wang",
-      designation: "Position3",
-      company: "Company 3",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
+    ],
+    es: [
+      {
+        testimonial: "Su dedicación incansable y logros impresionantes en múltiples proyectos desafiantes. Su pasión por su oficio es evidente en cada línea de código que escribe, transformando problemas complejos en soluciones elegantes. La experiencia de Raphael como programador es extraordinaria, constantemente empujando los límites de la innovación y la eficiencia. Su compromiso y brillantez no solo han avanzado nuestros proyectos, sino que también han inspirado a sus compañeros a buscar la excelencia. ¡Gracias, Raphael, por tus notables contribuciones y el entusiasmo que traes a tu trabajo cada día!",
+        name: "Joseph Rouse",
+        designation: "Director de Operaciones",
+        company: "Quiroga Law Office, PLLC",
+        image: "https://media.licdn.com/dms/image/v2/C560BAQGuujuxiPcRRA/company-logo_200_200/company-logo_200_200/0/1631370909330?e=1746057600&v=beta&t=NqJj7TqE7m6hAuEAnhunuzpzexeO03Mml21lKy3YM80",
+        url: "https://www.linkedin.com/company/quirogalawoffice",
+        doc: "",
+        email: ""
+      },
+      {
+        testimonial: "Raphael realmente merece reconocimiento por su excepcional trabajo en las últimas aplicaciones. He elegido la lealtad como su valor central, pero en las últimas semanas, Raphael ha demostrado todos los seis valores centrales. Estoy emocionado por lo que vendrá para la empresa, gracias a las aplicaciones que Raphael ha desarrollado por su cuenta en tan poco tiempo. ¡Estoy muy orgulloso de tener a Raphael en el equipo!",
+        name: "Katherin Daza",
+        designation: "Supervisor de Ejecución",
+        company: "Quiroga Law Office, PLLC",
+        image: "https://media.licdn.com/dms/image/v2/C560BAQGuujuxiPcRRA/company-logo_200_200/company-logo_200_200/0/1631370909330?e=1746057600&v=beta&t=NqJj7TqE7m6hAuEAnhunuzpzexeO03Mml21lKy3YM80",
+        url: "https://www.linkedin.com/company/quirogalawoffice",
+        doc: "",
+        email: ""
+      },
+      {
+        testimonial: "Raphael demostró no solo una excepcional inteligencia y un trabajo incansable, sino también una extraordinaria aptitud para construir relaciones de clientes duraderas. Su capacidad natural para conectarse con la gente se complementó con su actitud proactiva, excelentes habilidades de gestión del tiempo y capacidades impresionantes de multitarea. Estas cualidades, combinadas con su meticulosa atención al detalle y una notable habilidad para innovar, lo convirtieron en un activo indispensable para nuestro equipo y una fuerza impulsora detrás del éxito de nuestros esfuerzos de marketing y ventas.",
+        name: "Narciso Cruz",
+        designation: "CEO",
+        company: "The Cruz Law Office APC",
+        image: "https://justatic.com/profile-images/1502461-1452726125-s.jpg",
+        url: "https://www.linkedin.com/in/narciso-nar-cruz-9281a523/",
+        doc: "https://drive.google.com/file/d/1zcUoTr0BeKpXBhOTCnfMYTVPZyDx_Kxl/view?usp=sharing",
+        email: "monica@thecruzlawoffice.com"
+      },
+      {
+        testimonial: "Raphael siempre mostró profesionalismo y dedicación en su papel. Sus habilidades técnicas, su capacidad para gestionar múltiples tareas de manera eficiente y sus excelentes habilidades de comunicación lo hicieron un miembro de equipo confiable y valioso. Su trabajo ha sido de gran beneficio para nuestra oficina, lo que lo ha convertido en un miembro de equipo confiable y valioso.",
+        name: "Monica Herrera",
+        designation: "COO",
+        company: "The Cruz Law Office APC",
+        image: "https://randomuser.me/api/portraits/women/4.jpg",
+        url: "https://www.linkedin.com/company/the-cruz-law-office-apc",
+        doc: "https://drive.google.com/file/d/1zcUoTr0BeKpXBhOTCnfMYTVPZyDx_Kxl/view?usp=sharing",
+        email: "monica@thecruzlawoffice.com"
+      },
+    ]
+  };
   
-  const projects = [
+  const projects = {
+    en: [
     {
       name: "Google calendar events analysis",
       description:
@@ -684,7 +1583,141 @@ import {
       image: carrent,
       source_code_link: "https://github.com/0xrphl/Data-Analyst-Portfolio",
     },
-
-  ];
+    ],
+    es: [
+      {
+        name: "Análisis de eventos de Google Calendar",
+        description: "Este proyecto utiliza Google Apps Script para extraer datos de eventos de Google Calendar y almacenarlos en Google Sheets. Los datos incluyen Título del Evento, Fechas, Creador y más para responsabilidad. También se utiliza en Looker Studio para obtener información sobre consultas de oficina.",
+        tags: [
+          {
+            name: "Google Sheets",
+            color: "green-text-gradient",
+          },
+          {
+            name: "Looker Studio",
+            color: "blue-text-gradient",
+          },
+          {
+            name: "Google Apps Script",
+            color: "red-text-gradient",
+          },
+          {
+            name: "Google API",
+            color: "gray-text-gradient",
+          },
+        ],
+        image: Calendar,
+        source_code_link: "https://github.com/0xrphl/Google-calendar-events-analysis-Google-sheets-Google-App-Scripts-Looker-Studio-",
+      },
+      {
+        name: "Seguimiento de cartera de criptomonedas",
+        description: "Este proyecto de Google Sheets le permite realizar un seguimiento de su cartera de criptomonedas utilizando datos en tiempo real extraídos de CoinMarketCap. Utiliza Google Apps Script para solicitar datos de la API de CoinMarketCap y actualizar su hoja de cálculo con los precios más recientes.",
+        tags: [
+          {
+            name: "Google Sheets",
+            color: "green-text-gradient",
+          },
+          {
+            name: "CoinMarketCap API",
+            color: "blue-text-gradient",
+          },
+        ],
+        image: Cryptotracker,
+        source_code_link: "https://github.com/0xrphl/Crypto-portfolio-tracker-Google-Sheets-Coinmarketcap-API-",
+      },
+      {
+        name: "Tablero de presupuesto y gastos",
+        description: "Realice un seguimiento de sus finanzas fácilmente en Google Sheets. Ingrese ingresos, ahorros y gastos, categorizados por fecha y tipo. Integración con Looker Studio para visualizar datos. Simplifique fácilmente sus finanzas.",
+        tags: [
+          {
+            name: "Google Sheets",
+            color: "green-text-gradient",
+          },
+          {
+            name: "Looker Studio",
+            color: "blue-text-gradient",
+          },
+        ],
+        image: budget,
+        source_code_link: "https://github.com/0xrphl/Budget-and-Expenses-dashboard-Google-Sheets-Looker-Studio-",
+      },
+      {
+        name: "Sistema de toma de datos y CRM",
+        description: "Este proyecto streamline la toma de datos de CRM utilizando Google Sheets, Apps Script y Looker Studio. Las funciones incluyen sistema de toma de datos de oficina, integración de Sheets, automatización de Apps Script, integración de Google Calendar, API de SMS para recordatorios y Looker Studio para insights KPI en tiempo real.",
+        tags: [
+          {
+            name: "Google Sheets",
+            color: "green-text-gradient",
+          },
+          {
+            name: "Looker Studio",
+            color: "blue-text-gradient",
+          },
+          {
+            name: "Google Apps Script",
+            color: "red-text-gradient",
+          },
+          {
+            name: "Google API",
+            color: "gray-text-gradient",
+          },
+        ],
+        image: CRM,
+        source_code_link: "https://github.com/0xrphl/Intake-and-CRM-Google-Sheets-Google-App-Script-Looker-Studio-",
+      },
+      {
+        name: "Proyecto de anillo de oro de tres piedras en SOLIDWORKS",
+        description: "Diseñé un anillo de oro de tres piedras en SolidWorks con diamantes certificados IGI. Hecho en 24k de oro radiante para elegancia y lujo ecológico, se utilizó SOLIDWORKS Visualize para renders. [GrabCAD model available on Github.]",
+        tags: [
+          {
+            name: "SOLIDWORKS",
+            color: "red-text-gradient",
+          },
+          {
+            name: "IGI certified diamonds",
+            color: "orange-text-gradient",
+          },
+          {
+            name: "Jewelry Design",
+            color: "pink-text-gradient",
+          },
+          {
+            name: "SOLIDWORKS Visualize",
+            color: "gray-text-gradient",
+          },
+        ],
+        image: ring,
+        source_code_link: "https://github.com/0xrphl/Three-stone-radiant-cut-diamond-ring-SOLIDWORKS-project",
+      },
+      {
+        name: "Portafolio de Analista de Datos",
+        description: "Creado con React-Three-Fiber y Tailwind CSS, presenta una exhibición inmersiva de mis habilidades SQL, Python, Tableau y Excel. Su plataforma interactiva y diseño responsivo crea una plataforma visualmente atractiva para explorar mis diversos proyectos de análisis de datos.",
+        tags: [
+          {
+            name: "react",
+            color: "blue-text-gradient",
+          },
+          {
+            name: "ThreeJS",
+            color: "green-text-gradient",
+          },
+          {
+            name: "tailwind",
+            color: "pink-text-gradient",
+          },
+          {
+            name: "HTML",
+            color: "orange-text-gradient",
+          },
+          {
+            name: "CSS",
+            color: "blue-text-gradient",
+          },
+        ],
+        image: carrent,
+        source_code_link: "https://github.com/0xrphl/Data-Analyst-Portfolio",
+      },
+    ]
+  };
   
   export { services, technologies, experiences, testimonials, projects, Linkedinlog };

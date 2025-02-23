@@ -8,8 +8,10 @@ import { slideIn } from "../utils/motion";
 import { Linkedinlogo } from "../assets";
 import { X } from "../assets";
 import { github } from "../assets";
+import { useLanguage } from '../context/LanguageContext';
 
 const Contact = () => {
+  const { t } = useLanguage();
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -38,7 +40,7 @@ const Contact = () => {
 
     emailjs
       .send(
-        'service_nfqrjzh',
+        'service_pxnvv1y',
         'template_p7khd1j',
         {
           from_name: form.name,
@@ -116,18 +118,18 @@ const Contact = () => {
 
         
 
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <p className={styles.sectionSubText}>{t('getInTouch')}</p>
+        <h3 className={styles.sectionHeadText}>{t('contactMe')}</h3>
 
         <form ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col gap-8'>
         <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Name</span>
+            <span className='text-white font-medium mb-4'>{t('yourName')}</span>
             <input
               type='text'
               name='name'
               value={form.name}
               onChange={handleChange}
-              placeholder="Type your Name"
+              placeholder={t('typeName')}
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>

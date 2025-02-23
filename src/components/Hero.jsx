@@ -2,8 +2,11 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { useLanguage } from '../context/LanguageContext';
 
 const Hero = () => {
+  const { t } = useLanguage();
+
   useEffect(() => {
     // Trigger animation or any other actions after the component has mounted
   }, []);
@@ -19,11 +22,10 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#5e41a3]'>Raphael</span>
+            {t('greeting')} <span className='text-[#5e41a3]'>Raphael</span>
           </h1>
           <p className={`${styles.heroSubText} mt-0 text-white-100`}>
-            Data analyst with engineering skills, <br className='sm:block hidden' />
-            creating web dashboards with 3D visuals
+            {t('heroDescription')}
           </p>
         </div>
       </div>
