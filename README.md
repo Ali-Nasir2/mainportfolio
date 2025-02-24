@@ -147,6 +147,7 @@ Feel free to reach out to me via email at [0xrphl@gmail.com](mailto:0xrphl@gmail
 
 ## Version History
 - 20240225BetaV1.2 - Latest version
+  - Historic data updated to 20240225
   - Added Spanish language support
   - Fixed mobile rendering and navigation issues
   - Optimized resource consumption for mobile devices
