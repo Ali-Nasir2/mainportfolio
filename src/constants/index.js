@@ -1560,7 +1560,7 @@ import {
         "Crafted with React-Three-Fiber and Tailwind CSS, presents an immersive display of my SQL, Python, Tableau, and Excel skills. Its interactive 3D elements and responsive design create a visually appealing platform to explore my diverse data analysis projects.",
       tags: [
         {
-          name: "react",
+          name: "React",
           color: "blue-text-gradient",
         },
         {
@@ -1568,7 +1568,7 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Tailwind CSS",
           color: "pink-text-gradient",
         },
         {
@@ -1579,6 +1579,10 @@ import {
           name: "CSS",
           color: "blue-text-gradient",
         },
+        {
+          name: "JavaScript ",
+          color: "yellow-text-gradient",
+        }
       ],
       image: carrent,
       source_code_link: "https://github.com/0xrphl/Data-Analyst-Portfolio",
