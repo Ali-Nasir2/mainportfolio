@@ -6,6 +6,7 @@ import { technologies } from "../constants";
 import BallCanvas from "./canvas/Ball";
 import Tooltip from "./common/Tooltip";
 import { styles } from "../styles";
+import { useLanguage } from "../context/LanguageContext";
 
 const LoadingFallback = () => (
   <Html center>
@@ -16,6 +17,7 @@ const LoadingFallback = () => (
 );
 
 const Tech = () => {
+  const { t, currentLanguage } = useLanguage();
   const [isMobile, setIsMobile] = useState(false);
   const [isMobile1, setIsMobile1] = useState(false);
   const [isMobile2, setIsMobile2] = useState(false);
@@ -36,7 +38,7 @@ const Tech = () => {
     // Set up an interval to print the viewport width every 2 seconds
     const intervalId = setInterval(updateViewportWidth, 2000);
 
-    const mediaQuery = window.matchMedia("(max-width: 650px)");
+    const mediaQuery = window.matchMedia("(max-width: 499px)");
     setIsMobile(mediaQuery.matches);
 
     const handleMediaQueryChange = (event) => {
@@ -45,7 +47,7 @@ const Tech = () => {
 
     mediaQuery.addEventListener("change", handleMediaQueryChange);
 
-    const mediaQuery1 = window.matchMedia("(min-width: 651px) and (max-width: 900px)");
+    const mediaQuery1 = window.matchMedia("(min-width: 500px) and (max-width: 900px)");
     setIsMobile1(mediaQuery1.matches);
 
     const handleMediaQueryChange1 = (event) => {
@@ -72,7 +74,7 @@ const Tech = () => {
     };
   }, [isMobile, isMobile1, isMobile2]);
 
-  const cols = isMobile ? 4 : isMobile1 ? 4 : isMobile2 ? 5 : 8;
+  const cols = isMobile ? 4 : isMobile1 ? 5 : isMobile2 ? 7 : 8;
   const rows = 6;
   const fox = isMobile ? 25 : 30;
 
@@ -111,18 +113,24 @@ const Tech = () => {
 
   const canvasStyle = {
     position: 'relative',
-    width: isMobile ? '100%' : isMobile1 ? '110%' : isMobile2 ? '100%' : '110%',
-    height: '130vh',
+    width: '100vw',
+    height: '100vh',
+    marginLeft: 'calc(-50vw + 50%)',
+    marginRight: 'calc(-50vw + 50%)',
+  };
+
+  const getTranslatedTitle = (title) => {
+    return t(`techNames.${title}`) || title;
   };
 
   return (
-    <div ref={techRef} className="flex flex-col items-center" onMouseMove={handleMouseMove}>
+    <div ref={techRef} className="flex flex-col items-center w-full" onMouseMove={handleMouseMove}>
       <p className={`${styles.sectionHeadText} text-center`}>
-        Technologies I've worked with
+        {t('technologiesWorkedWith')}
       </p>
-      <div style={{ ...canvasStyle }} className="flex flex-row flex-wrap justify-center gap-0 items-center">
+      <div style={{ ...canvasStyle }} className="relative">
         <Canvas
-          style={{ width: '100%', height: '80%' }}
+          style={{ width: '100%', height: '100%' }}
           frameloop={isMobile ? "demand" : "always"}
           dpr={[1, isMobile ? 1 : 1.5]}
           gl={{ 
@@ -133,7 +141,14 @@ const Tech = () => {
             depth: true,
             precision: "lowp"
           }}
-          camera={isMobile ? { position: [5.3, -6.2, 50], fov: 28, rotation: [0, Math.PI / 30, 0] } : isMobile1 ? { position: [5.3, -3, 50], fov: 50, rotation: [0, Math.PI / 30, 0] } : isMobile2 ? { position: [5.3, -3.8, 50], fov: 24, rotation: [0, Math.PI / 30, 0] } : { position: [3, -0.5, 20], fov: 47, rotation: [0, Math.PI / 30, 0] }}
+          camera={isMobile ? 
+            { position: [5.3, -6.2, 50], fov: 40, rotation: [0, Math.PI / 30, 0] } : 
+            isMobile1 ? 
+              { position: [5.3, -5, 50], fov: 31, rotation: [0, Math.PI / 30, 0] } : 
+            isMobile2 ? 
+              { position: [5.3, -2.6, 50], fov: 29, rotation: [0, Math.PI / 30, 0] } : 
+              { position: [3, -0.5, 20], fov: 47, rotation: [0, Math.PI / 30, 0] }
+          }
           performance={{ min: 0.5 }}
         >
           {technologies.map((technology, index) => (
@@ -147,10 +162,10 @@ const Tech = () => {
                 index={index}
                 rows={rows}
                 cols={cols}
-                title={technology.name}
-                onPointerOver={() => setHoveredTitle(technology.name)}
+                title={getTranslatedTitle(technology.name)}
+                onPointerOver={() => setHoveredTitle(getTranslatedTitle(technology.name))}
                 onPointerOut={() => setHoveredTitle(null)}
-                onTouchStart={(title, event) => handlePointerDown(title, event)}
+                onTouchStart={(title, event) => handlePointerDown(getTranslatedTitle(title), event)}
               />
             </Suspense>
           ))}

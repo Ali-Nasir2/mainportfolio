@@ -94,8 +94,12 @@ const Works = () => {
   return (
     <div className="relative w-full mx-auto">
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-[14px] sm:text-[18px]`}>My work</p>
-        <h2 className={`${styles.sectionHeadText} text-[30px] sm:text-[50px]`}>Projects.</h2>
+        <p className={`${styles.sectionSubText} text-[14px] sm:text-[18px]`}>
+          {t('myWork')}
+        </p>
+        <h2 className={`${styles.sectionHeadText} text-[30px] sm:text-[50px]`}>
+          {t('projects')}
+        </h2>
       </motion.div>
 
       <div className='w-full flex flex-col px-2 sm:px-4'>
@@ -103,7 +107,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[14px] sm:text-[17px] max-w-3xl leading-[24px] sm:leading-[30px]'
         >
-          {/* Add translation for this text */}
+          {t('projectsDescription')}
         </motion.p>
       </div>
 

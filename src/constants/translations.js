@@ -33,7 +33,32 @@ export const translations = {
     sending: "Sending...",
     send: "Send",
     thankYou: "Thank you. I will get back to you as soon as possible.",
-    errorMessage: "Ahh, something went wrong. Please try again."
+    errorMessage: "Ahh, something went wrong. Please try again.",
+
+    // Tech section
+    technologiesWorkedWith: "Technologies I've worked with",
+
+    // Technology names
+    techNames: {
+      "HTML 5": "HTML 5",
+      "CSS 3": "CSS 3",
+      "JavaScript": "JavaScript",
+      "React JS": "React JS",
+      "Tailwind CSS": "Tailwind CSS",
+      "Node JS": "Node JS",
+      "Three JS": "Three JS",
+      "SOLIDWORKS": "SOLIDWORKS",
+      // Add other technology names here...
+    },
+
+    // Works section
+    myWork: "My work",
+    projects: "Projects.",
+    projectsDescription: "Following projects showcase my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.",
+
+    // Feedbacks section
+    whatOthersSay: "What others say",
+    testimonials: "Testimonials.",
   },
   es: {
     // Navbar
@@ -69,6 +94,31 @@ export const translations = {
     sending: "Enviando...",
     send: "Enviar",
     thankYou: "Gracias. Me pondré en contacto contigo lo antes posible.",
-    errorMessage: "Algo salió mal. Por favor, inténtalo de nuevo."
+    errorMessage: "Algo salió mal. Por favor, inténtalo de nuevo.",
+
+    // Tech section
+    technologiesWorkedWith: "Tecnologías con las que he trabajado",
+
+    // Technology names
+    techNames: {
+      "HTML 5": "HTML 5",
+      "CSS 3": "CSS 3",
+      "JavaScript": "JavaScript",
+      "React JS": "React JS",
+      "Tailwind CSS": "Tailwind CSS",
+      "Node JS": "Node JS",
+      "Three JS": "Three JS",
+      "SOLIDWORKS": "SOLIDWORKS",
+      // Add other technology names here...
+    },
+
+    // Works section
+    myWork: "Mi trabajo",
+    projects: "Proyectos.",
+    projectsDescription: "Los siguientes proyectos muestran mis habilidades y experiencia a través de ejemplos prácticos de mi trabajo. Cada proyecto está brevemente descrito e incluye enlaces a repositorios de código y demostraciones en vivo. Esto refleja mi capacidad para resolver problemas complejos, trabajar con diferentes tecnologías y gestionar proyectos de manera eficiente.",
+
+    // Feedbacks section
+    whatOthersSay: "Lo que otros dicen",
+    testimonials: "Testimonios.",
   }
 }; 

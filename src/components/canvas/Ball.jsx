@@ -21,8 +21,8 @@ const BallCanvas = ({ icon, index, rows, cols, title, onPointerOver, onPointerOu
     };
   }, []);
 
-  const x = ((index % cols) * 5 - (cols * 5) / 2) / 2.75;
-  const y = (Math.floor(index / cols) * 5 - (rows * 5) / 2) / 2.7;
+  const x = ((index % cols) * 2.3 - (cols * 2.3) / 2);
+  const y = (Math.floor(index / cols) * 2.3 - (rows * 2.3) / 2);
 
   const floatConfig = {
     speed: isMobile ? 0.5 : 1.6,
