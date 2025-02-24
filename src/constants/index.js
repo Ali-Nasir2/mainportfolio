@@ -1284,33 +1284,33 @@ import {
         iconBg: "#FFF",
         date: "Enero 2016 - Diciembre 2020",
         points: [
-          "Offered private tutoring sessions in thermodynamics, fluid mechanics, and materials science to university engineering students, catering to diverse college students from various colleges and faculties across the city.",
-          "Provided independent, personalized math and physics instruction to high school students requiring additional one-on-one tutoring.",
-          "Designed customized lessons in math, physics, and engineering subjects like statics, dynamics, and strength of materials to civil, electrical, and mechanical engineering undergraduates, preparing students for projects, proofs, and tests through personalized instruction and tutoring.",
+          "Ofrecí sesiones privadas de tutoría en termodinámica, mecánica de fluidos y ciencia de materiales a estudiantes universitarios de ingeniería, atendiendo a diversos estudiantes de varias facultades y universidades de la ciudad.",
+          "Proporcioné instrucción personalizada e independiente en matemáticas y física a estudiantes de secundaria que requerían tutoría individual adicional.",
+          "Diseñé lecciones personalizadas en matemáticas, física y materias de ingeniería como estática, dinámica y resistencia de materiales para estudiantes de ingeniería civil, eléctrica y mecánica, preparándolos para proyectos, demostraciones y exámenes a través de instrucción y tutoría personalizada.",
         ],
         tags: [
           {
-            name: "#Multivariable Calculus",
+            name: "#Cálculo Multivariable",
             color: "orange-text-gradient",
           },
           {
-            name: "#Statics, Dynamics, and Strength of Materials",
+            name: "#Estática, Dinámica y Resistencia de Materiales",
             color: "green-text-gradient",
           },
           {
-            name: "#Physics",
+            name: "#Física",
             color: "blue-text-gradient",
           },
           {
-            name: "#Thermodynamics",
+            name: "#Termodinámica",
             color: "pink-text-gradient",
           },
           {
-            name: "#Statistics",
+            name: "#Estadística",
             color: "gray-text-gradient",
           },
           {
-            name: "#Teaching",
+            name: "#Enseñanza",
             color: "red-text-gradient",
           },
         ],
@@ -1322,14 +1322,14 @@ import {
         iconBg: "#000000",
         date: "Enero 2015 - Diciembre 2021",
         points: [
-          "Focus on specializing in mathematics, I serve as a teaching designated tutor for the faculty of basic sciences (2015-2018), where I provide instructional support to students ranging from basic multivariable calculus, linear algebra to advanced topics such as complex systems analysis and differential equations.",
-          "In 2017, I participated in a project with the technology and innovation branch of the National Education Service (Tecnoparque SENA), Our task was to design an irrigation system for a greenhouse, financed by the city, aimed at automating the irrigation process for seeds and crops before transplantation to the farmland. Managing timelines, resources, and stakeholder expectations during this project sharpened my project management skills, preparing me for future leadership roles in engineering endeavors and problem solving.",
-          "Developed a comprehensive understanding of systems design failure and fatigue theory, gaining valuable insights into the complexities of mechanical systems and their performance under varying conditions. Proficient in applying linear algebra techniques, particularly in determining eigenvalues and eigenvectors of stress tensor systems, essential for both theoretical analysis and practical applications such as finite element analysis (FEA). Hands-on experience in implementing and interpreting analysis results using industry-standard software tools such as SolidWorks Simulation and ANSYS, enabling the validation and optimization of mechanical designs for robustness and performance.",
-          "Certified SolidWorks Mechanical Design Associate, demonstrating proficiency in utilizing SolidWorks software for mechanical design tasks and enhancing engineering workflows."
+          "Con enfoque en especialización en matemáticas, serví como tutor designado para la facultad de ciencias básicas (2015-2018), donde brindé apoyo instructivo a estudiantes desde cálculo multivariable básico, álgebra lineal hasta temas avanzados como análisis de sistemas complejos y ecuaciones diferenciales.",
+          "En 2017, participé en un proyecto con la rama de tecnología e innovación del Servicio Nacional de Educación (Tecnoparque SENA). Nuestra tarea fue diseñar un sistema de riego para un invernadero, financiado por la ciudad, destinado a automatizar el proceso de riego para semillas y cultivos antes del trasplante al campo. La gestión de cronogramas, recursos y expectativas de los interesados durante este proyecto afiló mis habilidades de gestión de proyectos, preparándome para futuros roles de liderazgo en esfuerzos de ingeniería y resolución de problemas.",
+          "Desarrollé una comprensión integral de la teoría de falla y fatiga de sistemas, obteniendo valiosos conocimientos sobre las complejidades de los sistemas mecánicos y su rendimiento bajo diversas condiciones. Competente en la aplicación de técnicas de álgebra lineal, particularmente en la determinación de valores y vectores propios de sistemas de tensores de estrés, esencial tanto para el análisis teórico como para aplicaciones prácticas como el análisis de elementos finitos (FEA). Experiencia práctica en la implementación e interpretación de resultados de análisis utilizando herramientas de software estándar de la industria como SolidWorks Simulation y ANSYS, permitiendo la validación y optimización de diseños mecánicos para robustez y rendimiento.",
+          "Certificado como Asociado en Diseño Mecánico de SolidWorks, demostrando competencia en la utilización del software SolidWorks para tareas de diseño mecánico y mejora de flujos de trabajo de ingeniería.",
         ],
         tags: [
           {
-            name: "#Thermodynamics",
+            name: "#Termodinámica",
             color: "orange-text-gradient",
           },
           {
@@ -1341,11 +1341,11 @@ import {
             color: "blue-text-gradient",
           },
           {
-            name: "#Fourier Transform",
+            name: "#Transformada de Fourier",
             color: "pink-text-gradient",
           },
           {
-            name: "#Time Series Analysis",
+            name: "#Análisis de Series Temporales",
             color: "gray-text-gradient",
           },
         ],
