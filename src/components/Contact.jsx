@@ -9,6 +9,7 @@ import { Linkedinlogo } from "../assets";
 import { X } from "../assets";
 import { github } from "../assets";
 import { useLanguage } from '../context/LanguageContext';
+// import { fiverr } from "../assets"; // Assuming you have a Fiverr logo in your assets
 
 const Contact = () => {
   const { t } = useLanguage();
@@ -31,45 +32,45 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
+ const handleSubmit = (e) => {
+  e.preventDefault();
+  setLoading(true);
 
-    // Include form.email in the message
-    const fullMessage = `${form.message}\n\nEmail: ${form.email}`;
+  // Include form.email in the message
+  const fullMessage = `${form.message}\n\nEmail: ${form.email}`;
 
-    emailjs
-      .send(
-        'service_pxnvv1y',
-        'template_p7khd1j',
-        {
-          from_name: form.name,
-          to_name: "Raphael Sanchez",
-          from_email: form.email,
-          to_email: "0xrphl@gmail.com",
-          message: fullMessage, // Use the updated message here
-        },
-        'C-lqF5So-fON-s2VF'
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert(t('thankYou'));
+  emailjs
+    .send(
+      'service_2mkklo9',     // Your new service ID
+      'template_5binj0q',    // Your new template ID
+      {
+        from_name: form.name,
+        to_name: "Ali Nasir",
+        from_email: form.email,
+        to_email: "alinasirakram1@gmail.com",
+        message: fullMessage, // Use the updated message here
+      },
+      'bPLHonX_tSAeA2Vhv'    // Your new public key
+    )
+    .then(
+      () => {
+        setLoading(false);
+        alert(t('thankYou'));
 
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        });
+      },
+      (error) => {
+        setLoading(false);
+        console.error(error);
 
-          alert(t('errorMessage'));
-        }
-      );
-  };
+        alert(t('errorMessage'));
+      }
+    );
+};
 
   return (
     <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
@@ -81,7 +82,7 @@ const Contact = () => {
           <button
             className='bg-tertiary py-2 px-2 rounded-xl outline-none text-white font-bold flex items-center'
             onClick={() => {
-              window.open("https://www.linkedin.com/in/0xraphael/", "_blank");
+              window.open("https://www.linkedin.com/in/ali-nasir-a92aaa27a/", "_blank");
             }}
           >
             <img
@@ -93,7 +94,7 @@ const Contact = () => {
           <button
             className='bg-tertiary py-2 px-2 rounded-xl outline-none text-white font-bold flex items-center'
             onClick={() => {
-              window.open("https://github.com/0xrphl", "_blank");
+              window.open("https://github.com/Ali-Nasir2", "_blank");
             }}
           >
             <img
@@ -105,7 +106,7 @@ const Contact = () => {
           <button
             className='bg-tertiary py-2 px-2 rounded-xl outline-none text-white font-bold flex items-center'
             onClick={() => {
-              window.open("https://twitter.com/0xrnull", "_blank");
+              window.open("https://www.upwork.com/freelancers/~01cda2fa76990adec7?mp_source=share", "_blank");
             }}
           >
             <img
@@ -114,6 +115,7 @@ const Contact = () => {
               style={{ width: '30px', height: '30px', marginRight: '0px' }}
             />
           </button>
+          
         </div>
 
         

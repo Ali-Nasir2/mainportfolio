@@ -1,21 +1,20 @@
-export const translations = {
+  export const translations = {
   en: {
     // Navbar
     about: "About",
     work: "Work",
     contact: "Contact",
     portfolio: "Portfolio",
-    role: "Data Scientist, Analyst & Web Developer",
+    role: "Data Scientist, Analyst & Front End Developer",
     roleShort: "Portfolio",
 
     // Hero
     greeting: "Hi, I'm",
-    heroDescription: "Data Scientist with engineering expertise, building scalable web dashboards with 3D visuals, using AI and machine learning for data analysis, task automation, and enhancing user experiences to drive impactful results.",
-
+    heroDescription: "A Data Analyst, Data Scientist, and Frontend Developer focused on turning data into insight and ideas into seamless digital experiences. I build responsive web applications with React, analyze and visualize data using Python and SQL, and apply machine learning to drive smart, impactful solutions." ,
     // About
     introduction: "Introduction",
     overview: "Overview.",
-    aboutDescription: "Data Scientist with engineering expertise, building scalable dashboards with 3D visuals and using AI/ML for data analysis, task automation, and impactful results. Experienced with CUDA, closed-source models like ChatGPT and Claude, open-source tools like OCR, Ollama, Llama, and LLMs like DeepSeek V3. Skilled in Docker, AWS (ECS, EC2, ECR), TypeScript, JavaScript, React, Node.js, Three.js, SQL, Python (Pandas, NumPy, Matplotlib), and data visualization tools like Power BI and Tableau. Collaborative, adaptable, and focused on creating scalable solutions.",
+    aboutDescription: "A Data Analyst, Data Scientist, and Frontend Developer focused on turning data into insight and ideas into seamless digital experiences. I build responsive web applications with React, analyze and visualize data using Python and SQL, and apply machine learning to drive smart, impactful solutions." ,
 
     // Experience
     workExperience: "Work Experience.",
@@ -60,6 +59,7 @@ export const translations = {
     whatOthersSay: "What others say",
     testimonials: "Testimonials.",
   },
+  
   es: {
     // Navbar
     about: "Sobre mí",
@@ -71,33 +71,33 @@ export const translations = {
 
     // Hero
     greeting: "Hola, soy",
-    heroDescription: "Científico de datos con experiencia en ingeniería de metodos, construyendo dashboards web escalables con visualizaciones 3D, utilizando IA y machine learning para análisis de datos, automatización de tareas y mejora de experiencias de usuario para impulsar resultados impactantes.",
+    heroDescription: "Analista de datos, científico de datos y desarrollador frontend enfocado en convertir datos en conocimiento e ideas en experiencias digitales fluidas. Construyo aplicaciones web responsivas con React, analizo y visualizo datos usando Python y SQL, y aplico aprendizaje automático para impulsar soluciones inteligentes y efectivas.",
 
     // About
     introduction: "Introducción",
     overview: "Resumen.",
-    aboutDescription: "Científico de datos con experiencia en ingeniería, desarrollando dashboards escalables con visualizaciones 3D y utilizando IA/ML para análisis de datos, automatización de tareas y resultados impactantes. Experimentado con CUDA, modelos cerrados como ChatGPT y Claude, herramientas de código abierto como OCR, Ollama, Llama y LLMs como DeepSeek V3. Competente en Docker, AWS (ECS, EC2, ECR), TypeScript, JavaScript, React, Node.js, Three.js, SQL, Python (Pandas, NumPy, Matplotlib) y herramientas de visualización de datos como Power BI y Tableau. Colaborativo, adaptable y enfocado en crear soluciones escalables.",
+    aboutDescription: "Analista de datos, científico de datos y desarrollador frontend con amplia experiencia en la transformación de datos en conocimientos valiosos y en la creación de experiencias digitales intuitivas. Especializado en el desarrollo de aplicaciones web responsivas con React, análisis y visualización de datos mediante Python y SQL, e implementación de técnicas de aprendizaje automático para generar soluciones innovadoras y de alto impacto.",
 
     // Experience
     workExperience: "Experiencia Laboral.",
-    whatDone: "Lo que he hecho hasta ahora",
+    whatDone: "Lo que he logrado hasta ahora",
 
     // Contact
     getInTouch: "Ponte en contacto",
     contactMe: "Contáctame.",
-    yourName: "Tu Nombre",
+    yourName: "Nombre",
     typeName: "Escribe tu nombre",
     emailAddress: "Correo electrónico",
-    typeEmail: "Escribe tu correo electrónico",
-    yourMessage: "Tu Mensaje",
-    typeMessage: "Escribe tu pregunta o consulta",
+    typeEmail: "Escribe tu dirección de correo",
+    yourMessage: "Mensaje",
+    typeMessage: "Escribe tu consulta o mensaje",
     sending: "Enviando...",
     send: "Enviar",
     thankYou: "Gracias. Me pondré en contacto contigo lo antes posible.",
-    errorMessage: "Algo salió mal. Por favor, inténtalo de nuevo.",
+    errorMessage: "Ha ocurrido un error. Por favor, inténtalo de nuevo.",
 
     // Tech section
-    technologiesWorkedWith: "Tecnologías con las que he trabajado",
+    technologiesWorkedWith: "Tecnologías con las que trabajo",
 
     // Technology names
     techNames: {
@@ -109,16 +109,21 @@ export const translations = {
       "Node JS": "Node JS",
       "Three JS": "Three JS",
       "SOLIDWORKS": "SOLIDWORKS",
-      // Add other technology names here...
+      "Python": "Python",
+      "SQL": "SQL",
+      "Tableau": "Tableau",
+      "Power BI": "Power BI",
+      "Docker": "Docker",
+      "AWS": "AWS"
     },
 
     // Works section
     myWork: "Mi trabajo",
     projects: "Proyectos.",
-    projectsDescription: "Los siguientes proyectos muestran mis habilidades y experiencia a través de ejemplos prácticos de mi trabajo. Cada proyecto está brevemente descrito e incluye enlaces a repositorios de código y demostraciones en vivo. Esto refleja mi capacidad para resolver problemas complejos, trabajar con diferentes tecnologías y gestionar proyectos de manera eficiente.",
+    projectsDescription: "Los siguientes proyectos destacan mis habilidades y experiencia a través de ejemplos reales de mi trabajo. Cada proyecto incluye una breve descripción y enlaces a repositorios de código y demostraciones en vivo, mostrando mi capacidad para resolver problemas complejos, trabajar con diversas tecnologías y gestionar proyectos de manera eficiente.",
 
     // Feedbacks section
-    whatOthersSay: "Lo que otros dicen",
+    whatOthersSay: "Opiniones",
     testimonials: "Testimonios.",
   }
-}; 
+};

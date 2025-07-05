@@ -22,7 +22,7 @@ const { currentLanguage, toggleLanguage, t } = useLanguage();
       window.scrollTo(0,0);}}>
         <img src={logo} alt="logo" className="w-12 h-12 object-contain"/>
         <p className="text-white text-[18px] font-bold cursor-pointer flex">
-          Raphael &nbsp;
+          Ali Nasir &nbsp;
           <span className="hidden md:block">|| {t('role')}</span>
           <span className="md:hidden">|| {t('roleShort')}</span>
         </p>
