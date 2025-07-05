@@ -1,7 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx}"],
-  mode: "jit",
+  // Paths to all of your template files
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}", // React source files
+    "./public/index.html",        // HTML entry
+  ],
+
   theme: {
     extend: {
       colors: {
@@ -20,16 +24,6 @@ module.exports = {
       },
     },
   },
+
   plugins: [],
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-  },
-  purge: {
-    enabled: process.env.NODE_ENV === 'production',
-    content: [
-      './src/**/*.{js,jsx,ts,tsx}',
-      './public/index.html',
-    ],
-  },
 };
